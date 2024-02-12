@@ -8,3 +8,5 @@ Binary, octal and hexadecimal numbers can be represented using this notation. An
 | `0b`    | Binary (base-2)       | `0b1010` |
 | `0o`    | Octal (base-8)        | `0o70`   |
 | `0x`    | Hexademical (base-16) | `0x2AF`  |
+
+While not specifically mentioned in the Python Essentials 1 notes, it's worth knowing that by default Python 3 outputs to standard Decimal (base-10). There are `bin()`, `oct()` and `hex()` functions which force an output in Python's notation.
