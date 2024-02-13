@@ -30,11 +30,11 @@ Binary, octal and hexadecimal numbers can be represented as **literals** using t
 
 While not specifically mentioned in the Python Essentials 1 notes, it's worth knowing that *by default Python 3 outputs to standard Decimal (base-10) when performing calculations in different numerical bases.* However, there are the `bin()`, `oct()` and `hex()` functions which maintain the chosen notation:
 
-`>>> print(0b1 + 0b1)`
+`print(0b1 + 0b1)`
 
 `2`
 
-`>>> print(bin(0b1 + 0b1))`
+`print(bin(0b1 + 0b1))`
 
 `0b10`
 
@@ -57,12 +57,34 @@ Python uses an order of operations similar to PEMDAS, the US counterpart to BODM
 5. **A**ddition – `+`
 6. **S**ubtraction – `-`
 
+### Exponentiation
+
+Exponentiation is the formal mathematical term for multiplying a value by itself several times. In British English, we usually say "x to the power of y".
+
+* **Exponentiation** (`**`) is two asterisks put together. For example, `2 ** 2` will output `4`.
+
+Exponentiation is notably the *only operator which is right-side bound by default* though this can be overridden by using brackets.
+
+`print(2 ** 2 ** 3)`
+
+`256`
+
+However, we can force left-side binding by using brackets:
+
+`print(( 2** 2) **3)`
+
+`64`
+
+### Left-side and right-side binding
+
+The operators in Python are by default left-side bound except exponentiation.
+
 ### Division `/` and floor division `//`
 
 Python has two forms of division built-in:
 
 1. **Division** (`/`) is the standard division operator which will *always* output a float value. For example, `9 / 3` will output `3.0`
-2. **Floor division** (`//`) creates an integer rounds the output to the lowest number by removing all the values beyond the decimal point. For example, running floor division on these outputs `3` each time: `3.1`, `3.5`, `3.9`
+2. **Floor division** (`//`) creates an integer by rounding the output to the lowest number and then removing all the values beyond the decimal point. For example, running floor division on these outputs `3` each time: `3.1`, `3.5`, `3.9`
 
 If it's easier, you could refer to them as *float division* and *integer division* respectively. Ceiling division is the opposite of floor division, but there's no built-in operator for it and is outside the scope of the PCEP.
 
