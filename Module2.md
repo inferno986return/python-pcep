@@ -61,7 +61,7 @@ Python uses an order of operations similar to PEMDAS, the US counterpart to BODM
 
 Like many interpreted programming languages, Python uses **dynamic variables** which means a variable's datatype is defined by the value itself rather than specific datatype keyword designation. 
 
-Python variables are *case-sensitive* which means that `y = 1` and `Y = 2` can co-exist in the same block of code can coexist together.
+Python variables are *case-sensitive* which means that `y = 1` and `Y = 2` can technically co-exist in the same block of code together while meaning different things.
 
 ### Variable datatypes
 
