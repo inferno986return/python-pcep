@@ -75,6 +75,14 @@ However, we can force left-side binding by using brackets:
 
 `64`
 
+Lastly, we have literal exponentiation using the letter `E` for expressing very large (or small numbers) such as 2×10<sup>8</sup> (200,000,000). Which would be `2E8` with this notation.
+
+`print(2E8)`
+
+`20000000.0`
+
+Using an exponential with `E` creates a float value?
+
 ### Left-side and right-side binding
 
 The operators in Python are by default left-side bound except exponentiation.
