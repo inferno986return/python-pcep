@@ -33,3 +33,9 @@ While not specifically mentioned in the Python Essentials 1 notes, it's worth kn
 `>>> print(bin(0b1 + 0b1))`
 
 `0b10`
+
+Binary values can be easily calculated by just counting the ones in each column like so, for example, the number `48` in decimal (base-10) is represented as:
+
+| 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+| -- | -- | -- | - | - | - | - |
+| `0`| `1`| `1`|`0`|`0`|`0`|`0`| 
