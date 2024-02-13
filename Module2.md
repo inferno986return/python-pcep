@@ -27,6 +27,6 @@ Python (apparently since Python 3.6) supports using underscores (_) as a substit
 
 `100000`
 
-`print("100_000")
+`print("100_000")`
 
 `100_000`
