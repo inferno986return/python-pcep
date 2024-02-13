@@ -1,5 +1,7 @@
 # Python Essentials 1 - Module 2: Python Data Types, Variables, Operators and Basic I/O Operations
 
+## Section 1: The "Hello World! program
+
 ## Section 2: Python literals
 
 ### Underscores in integers and floats
@@ -39,3 +41,5 @@ Binary values can be easily calculated by just counting the ones in each column 
 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 | -- | -- | -- | - | - | - | - |
 | `0`| `1`| `1`|`0`|`0`|`0`|`0`| 
+
+## Section 3: Operators – data manipulation tools
