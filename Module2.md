@@ -93,7 +93,7 @@ Python has three built-in forms of division:
 
 1. **Division** (`/`) is the standard division operator which will *always* output a float value. For example, `9 / 3` will output `3.0`
 2. **Floor division** (`//`) creates an integer by rounding the output to the lowest number and then removing all the values beyond the decimal point. For example, running floor division on these outputs `3` each time: `3.1`, `3.5`, `3.9`
-3. **Modulo** (`%`) gives the remainder of a division as an integer.
+3. **Modulo** (`%`) gives the remainder of a division as an integer. It can be useful for checking divisibility i.e. whether 9 is divisible by 3 or determining if a value is even.
 
 In summary, division always outputs floats and both floor division and modulo always output integers
 
