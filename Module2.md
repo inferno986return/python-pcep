@@ -62,7 +62,7 @@ Python uses an order of operations similar to PEMDAS, the US counterpart to BODM
 Python has two forms of division built-in:
 
 1. **Division** (`/`) is the standard division operator which will *always* output a float value. For example, `9 / 3` will output `3.0`
-2. **Floor division** (`//`) creates an integer removing all the values beyond the decimal point. For example, running floor division on these outputs `3` each time: `3.1`, `3.5`, `3.9`
+2. **Floor division** (`//`) creates an integer rounds the output to the lowest number by removing all the values beyond the decimal point. For example, running floor division on these outputs `3` each time: `3.1`, `3.5`, `3.9`
 
 If it's easier, you could refer to them as *float division* and *integer division* respectively. Ceiling division is the opposite of floor division, but there's no built-in operator for it and is outside the scope of the PCEP.
 
