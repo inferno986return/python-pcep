@@ -87,12 +87,15 @@ Using an exponential with `E` creates a float value. Though as usual this can be
 
 The operators in Python are by default left-side bound except exponentiation.
 
-### Division `/` and floor division `//`
+### Division `/`, floor division `//` and modulo `%`
 
-Python has two forms of division built-in:
+Python has three built-in forms of division:
 
 1. **Division** (`/`) is the standard division operator which will *always* output a float value. For example, `9 / 3` will output `3.0`
 2. **Floor division** (`//`) creates an integer by rounding the output to the lowest number and then removing all the values beyond the decimal point. For example, running floor division on these outputs `3` each time: `3.1`, `3.5`, `3.9`
+3. **Modulo** (`%`) gives the remainder of a division as an integer.
+
+In summary, division always outputs floats and both floor division and modulo always output integers
 
 If it's easier, you could refer to them as *float division* and *integer division* respectively. Ceiling division is the opposite of floor division, but there's no built-in operator for it and is outside the scope of the PCEP.
 
