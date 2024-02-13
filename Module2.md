@@ -81,7 +81,7 @@ Lastly, we have literal exponentiation using the letter `E` for expressing very 
 
 `20000000.0`
 
-Using an exponential with `E` creates a float value?
+Using an exponential with `E` creates a float value. Though as usual this can be forced into an integer by using `int()`.
 
 ### Left-side and right-side binding
 
