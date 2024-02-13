@@ -22,9 +22,9 @@ Binary, octal and hexadecimal numbers can be represented as **literals** using t
 
 | Syntax: | Numeric base:         | Example: |
 | ------- | --------------------- | -------- |
-| `0b`    | Binary (base-2)       | `0b1010` |
-| `0o`    | Octal (base-8)        | `0o70`   |
-| `0x`    | Hexademical (base-16) | `0x2AF`  |
+|   `0b`  | Binary (base-2)       | `0b1010` |
+|   `0o`  | Octal (base-8)        | `0o70`   |
+|   `0x`  | Hexademical (base-16) | `0x2AF`  |
 
 While not specifically mentioned in the Python Essentials 1 notes, it's worth knowing that *by default Python 3 outputs to standard Decimal (base-10) when performing calculations in different numerical bases.* However, there are the `bin()`, `oct()` and `hex()` functions which maintain the chosen notation:
 
@@ -45,6 +45,7 @@ Binary values can be easily calculated by just counting the ones in each column 
 ## Section 3: Operators – data manipulation tools
 
 ### Order of operations
+
 Python uses an order of operations similar to PEMDAS, the US counterpart to BODMAS:
 
 1. **P**arentheses or brackets – `()`
@@ -53,3 +54,18 @@ Python uses an order of operations similar to PEMDAS, the US counterpart to BODM
 4. **D**ivision – `/` or ÷
 5. **A**ddition – `+`
 6. **S**ubtraction – `-`
+
+### Variables
+
+Like many interpreted programming languages, Python uses **dynamic variables** which means a variable's datatype is defined by the value itself rather than specific designation. 
+
+Python variables are *case-sensitive* which means that `y = 1` and `Y = 2` can co-exist in the same block of code can coexist together.
+
+### Variable datatypes
+
+For the PCEP, these datatypes are the only ones covered though there are many more built into Python 3:
+
+* Integer – whole numbers such as `1`, `10` and `100`
+* Float – decimal numbers such as `1.0`, `.5` and `1.23`
+* String – a character or series of characters using single (`'`) or double (`"`) quotes such as `"Hello"`, `10` and `"This is a sentence."`
+* Boolean – either `True` or `False` (booleans are case-sensitive)
