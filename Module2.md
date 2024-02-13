@@ -20,11 +20,13 @@ Python (apparently since Python 3.6) supports using underscores (_) as a substit
 
 Binary, octal and hexadecimal numbers can be represented as **literals** using this notation. An easy way to remember hexadecimal is that many memory addresses start with `0x` or the simple mnemonic of *box*:
 
-| Syntax: | Numeric base:         | Example: |
-| ------- | --------------------- | -------- |
-|   `0b`  | Binary (base-2)       | `0b1010` |
-|   `0o`  | Octal (base-8)        | `0o70`   |
-|   `0x`  | Hexademical (base-16) | `0x2AF`  |
+| Syntax:      | Numeric base:         | Example: |
+| -------------| --------------------- | -------- |
+| `0b` or `0B` | Binary (base-2)       | `0b1010` |
+| `0o` or `0O` | Octal (base-8)        | `0o70`   |
+| `0x` or `0X` | Hexademical (base-16) | `0x2AF`  |
+
+**Note:** This numerical base notation is case-insensitive.
 
 While not specifically mentioned in the Python Essentials 1 notes, it's worth knowing that *by default Python 3 outputs to standard Decimal (base-10) when performing calculations in different numerical bases.* However, there are the `bin()`, `oct()` and `hex()` functions which maintain the chosen notation:
 
