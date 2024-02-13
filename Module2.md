@@ -48,7 +48,7 @@ Binary values can be easily calculated by just counting the ones in each column 
 Python uses an order of operations similar to PEMDAS, the US counterpart to BODMAS:
 
 1. **P**arentheses or brackets – `()`
-2. **E**xponentiation or of – `**` or x^y
+2. **E**xponentiation or of – `**` or x^y or x<sup>y</sup>
 3. **M**ultiplication – `*` or ×
 4. **D**ivision – `/` or ÷
 5. **A**ddition – `+`
