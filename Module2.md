@@ -96,6 +96,14 @@ Python has two forms of division built-in:
 
 If it's easier, you could refer to them as *float division* and *integer division* respectively. Ceiling division is the opposite of floor division, but there's no built-in operator for it and is outside the scope of the PCEP.
 
+It may also be outside the scope of the PCEP, but you may as well know the terminology: dividend / divisor = quotient
+
+* The **dividend** is the number that is being divided. It represents the total amount that you are splitting into equal parts.
+* The **divisor** is the number by which you are dividing the dividend. It represents the number of equal parts you are creating.
+* The **quotient** is the result of the division. It represents the size of each equal part you obtain after dividing the dividend by the divisor.
+
+See also: https://www.mathsisfun.com/numbers/division.html
+
 ### Variables
 
 Like many interpreted programming languages, Python uses **dynamic variables** which means a variable's datatype is defined by the value itself rather than specific datatype keyword designation. 
