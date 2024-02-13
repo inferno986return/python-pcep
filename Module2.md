@@ -1,7 +1,7 @@
 # Python Essentials 1 - Module 2: Python Data Types, Variables, Operators and Basic I/O Operations
 
 ## Binary, Octal and Hexadecimal
-Binary, octal and hexadecimal numbers can be represented as **literals** using this notation. An easy way to remember hexadecimal is that many memory addresses start with `0x`:
+Binary, octal and hexadecimal numbers can be represented as **literals** using this notation. An easy way to remember hexadecimal is that many memory addresses start with `0x` or the simple mnemonic of *box*:
 
 | Syntax: | Numeric base:         | Example: |
 | ------- | --------------------- | -------- |
