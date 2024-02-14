@@ -113,7 +113,13 @@ And finally, division by zero is mathematically undefined. Therefore it will thr
 
 Like many interpreted programming languages, Python uses **dynamic variables** which means a variable's datatype is defined by the value itself rather than specific datatype keyword designation. 
 
-Python variables are *case-sensitive* which means that `y = 1` and `Y = 2` can technically co-exist in the same block of code together while meaning different things.
+Python variables are *case-sensitive* which means that `y = 1` and `Y = 2` can technically co-exist in the same block of code together while meaning different things:
+
+`y = 0`
+
+`Y = 1`
+
+`print(y, Y)`
 
 ### Variable datatypes
 
