@@ -107,7 +107,13 @@ It may also be outside the scope of the PCEP, but you may as well know the termi
 
 See also: https://www.mathsisfun.com/numbers/division.html
 
-And finally, division by zero is mathematically undefined. Therefore it will throw an error if you try to use zero (`0`) as the divisor. 
+And finally, division by zero is mathematically undefined. Therefore it will throw an error if you try to use zero (`0`) as the divisor:
+
+`3 / 0`
+
+`Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero`
 
 ### Variables
 
