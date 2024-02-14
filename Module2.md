@@ -75,7 +75,7 @@ However, we can force left-side binding by using brackets:
 
 `64`
 
-Lastly, we have literal exponentiation using the letter `E` for expressing very large (or small numbers) such as 2×10<sup>8</sup> (200,000,000). Which would be `2E8` with this notation.
+Lastly, we have literal exponentiation using the letter `E` for expressing very large (or small numbers) such as 2×10<sup>8</sup> (200,000,000), which would be `2E8` with this notation.
 
 `print(2E8)`
 
@@ -106,6 +106,8 @@ It may also be outside the scope of the PCEP, but you may as well know the termi
 * The **quotient** is the result of the division. It represents the size of each equal part you obtain after dividing the dividend by the divisor.
 
 See also: https://www.mathsisfun.com/numbers/division.html
+
+And finally, division by zero is mathematically undefined. Therefore it will throw an error if you try to use zero (`0`) as the divisor. 
 
 ### Variables
 
