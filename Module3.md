@@ -4,7 +4,7 @@
 
 ### LAB: Collatz conjecture
 
-Collatz conjecture is an unsolved yet simplistic mathematical problem and the second lab exercise for while loops.
+Collatz conjecture is an unsolved yet simplistic mathematical problem and the second lab exercise for while loops. For the sake of this Python lab, every c0 which is a positive integer (that isn't zero) with enough steps can be made equal to 1.
 
 1. Take a positive integer which is greater than or equal to 1 and label it as c0.
 2. For even numbers, divide c0 by 2;
