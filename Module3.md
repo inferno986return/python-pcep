@@ -50,3 +50,21 @@ The PCEP example for `c0 = 15` might be incorrect. Here's my output:
 `1`
 
 `steps = 17`
+
+# Section 3
+
+## Logical expressions
+
+In electronics, there are logic gates. In the PCEP, you need to know these - AND, OR, NOT
+
+>  Wiktionary defines **conjuction** as: (logic) The proposition resulting from the combination of two or more propositions using the `∧` operator.
+
+AND is a conjunction, all inputs must be a `1` to get an output of `1`, as per the truth table below:
+
+> Wiktionary defines **disjunction** as: (mathematics) A logical operator that results in “true” when some of its operands are true.
+
+OR is a disjunction, it is flexible so if at least 1 input is a `1` then the output will be `1`
+
+NOT simply flips the output from `0` to `1` and vice-versa. In electronic engineering, the NOT gate is called an *inverter* as it will invert the output.
+
+
