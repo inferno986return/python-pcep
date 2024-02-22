@@ -67,7 +67,15 @@ OR is a disjunction, it is flexible so if at least 1 input is a `1` then the out
 
 NOT simply flips the output from `0` to `1` and vice-versa. In electronic engineering, the NOT gate is called an *inverter* as it will invert the output.
 
-Using NOT NOT results in a double negative effect similar to statements made in English such as: I will not not leave the house today. Also, using two minus signs to together negates them into a plus `1 -- 1 = 2`
+Using NOT NOT results in a double negative effect similar to statements made in English such as: *"I will not not leave the house today"*. Also, using two minus signs together negates them into a plus `1 -- 1 = 2`
+
+### Order of operations
+
+Much like the mathematical operators from Section 2, logical operators are evaluated in a fixed order:
+
+1. NOT
+2. AND
+3. OR
 
 
 
