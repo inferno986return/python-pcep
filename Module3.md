@@ -75,11 +75,12 @@ Using NOT NOT results in a double negative effect similar to statements made in 
 
 ### Order of operations
 
-Much like the mathematical operators from Section 2, logical operators are evaluated in a fixed order:
+Much like the mathematical operators from Section 2, logical operators are evaluated in a fixed order. You could use the mnemonic `NAXO`:
 
 1. NOT
 2. AND
-3. OR
+3. XOR
+4. OR
 
 ## Bitwise operations
 
