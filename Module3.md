@@ -83,4 +83,31 @@ Much like the mathematical operators from Section 2, logical operators are evalu
 
 ## Bitwise operations
 
+## Compare boolean and bitwise operations
 
+Let's start by assigning two variables `i` and `j`:
+
+`i = 15`
+
+`j = 22`
+
+Now assuming these variables are 32-bit integers, their binary values will be as follows:
+
+`i: 00000000000000000000000000001111`
+`j: 00000000000000000000000000010110`
+
+Now let's Boolean AND them together:
+
+`log = i and j`
+
+By default, if we combine the two we get decimal `22` or binary `0b10110`. However, if we force the output as a boolean, we get True:
+
+`print(bool(log))`
+
+`True`
+
+This output is to be expected from the AND truth table from earlier. By default, Python will usually treat zero `0` as False and other integers as True.
+
+Next, we have bitwise:
+
+`bit = i & j`
