@@ -118,7 +118,13 @@ The Boolean logic operators in Python only compare the whole integers. However, 
 
 ### Two's complement
 
+Two's compliment...
 
+### Bit shifting left (`<<`) and right (`>>`)
+
+Bitwise left shifting `<<` can be calculated using the formula - x << y = x * y ** y
+
+Conversely, Bitwise right shifting `>>` can be calculated using the formula (I've used floor division to force an integer) - x << y = x // y ** y
 
 ### Compare boolean and bitwise operations
 
@@ -148,3 +154,5 @@ This output is to be expected from the AND truth table from earlier. By default,
 Next, we have bitwise:
 
 `bit = i & j`
+
+
