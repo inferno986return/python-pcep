@@ -122,9 +122,11 @@ Two's compliment...
 
 ### Bit shifting left (`<<`) and right (`>>`)
 
-Bitwise left shifting `<<` can be calculated using the formula - x << y = x * y ** y
+Shifting moves the bits of an integer to enlarge it or make it smaller.
 
-Conversely, Bitwise right shifting `>>` can be calculated using the formula (I've used floor division to force an integer) - x << y = x // y ** y
+Bitwise left shifting `<<` shifts all bits in a number to the left by a specified number of positions. It can be calculated using the formula - `x << y = x * y ** y`
+
+Conversely, Bitwise right shifting `>>` shifts all bits in a number to the right by a specified number of positions. It can be calculated using the formula (I've used floor division to force an integer) - `x << y = x // y ** y`
 
 ### Compare boolean and bitwise operations
 
