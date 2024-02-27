@@ -87,17 +87,21 @@ XOR is exclusive OR which means one or the other, but not both making it the opp
 
 <!--diagram-->
 
-| Input A | Output |
-| ------- | ------ |
-|   `0`   |   `1`  |
-|   `1`   |   `0`  |
+| Input A | Input B | Output |
+| ------- | ------  | ------ |
+|   `0`   |   `0`   |   `0`  |
+|   `1`   |   `0`   |   `1`  |
+|   `0`   |   `1`   |   `1`  |
+|   `1`   |   `1`   |   `0`  |
 
 NOT simply flips the output from `0` to `1` and vice-versa. In electronic engineering, the NOT gate is called an *inverter* as it will invert the output. Usually, it's combined with other logic gates to make: NAND, NOR and NXOR. As a fun fact, NAND gates are the basis for solid-state storage used in flash drives and solid-state drives (SSDs).
 
 Using NOT NOT results in a double negative effect similar to statements made in English such as: *"I will not not leave the house today"*. Also, using two minus signs together negates them into a plus `1 -- 1 = 2`
 
-| Input A | Input B | Output |
-| ------- | ------  | ------ |
+| Input A | Output |
+| ------- | ------ |
+|   `0`   |   `1`  |
+|   `1`   |   `0`  |
 
 ### Boolean order of operations
 
