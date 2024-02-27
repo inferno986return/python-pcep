@@ -63,12 +63,12 @@ AND is a conjunction, all inputs must be a `1` to get an output of `1`, as per t
 
 <!--diagram-->
 
-| Input  | Input | Output |
-| ------ | ----- | ------ |
-|  `0`   |  `0`  |   `0`  |
-|  `1`   |  `0`  |   `0`  |
-|  `0`   |  `1`  |   `0`  |
-|  `1`   |  `1`  |   `1`  |
+| Input A | Input B | Output |
+| ------- | ------- | ------ |
+|   `0`   |   `0`   |   `0`  |
+|   `1`   |   `0`   |   `0`  |
+|   `0`   |   `1`   |   `0`  |
+|   `1`   |   `1`   |   `1`  |
 
 > Wiktionary defines **disjunction** as: (mathematics) A logical operator that results in “true” when some of its operands are true.
 
@@ -76,27 +76,28 @@ OR is a disjunction and it is flexible. If at least 1 input is a `1` then the ou
 
 <!--diagram-->
 
-| Input  | Input | Output |
-| ------ | ----- | ------ |
-|  `0`   |  `0`  |   `0`  |
-|  `1`   |  `0`  |   `1`  |
-|  `0`   |  `1`  |   `1`  |
-|  `1`   |  `1`  |   `1`  |
+| Input A | Input B | Output |
+| ------- | ------  | ------ |
+|   `0`   |   `0`   |   `0`  |
+|   `1`   |   `0`   |   `1`  |
+|   `0`   |   `1`   |   `1`  |
+|   `1`   |   `1`   |   `1`  |
 
 XOR is exclusive OR which means one or the other, but not both making it the opposite of AND. As a fun fact, XOR is used for the parity bit in RAID 5 setups to verify data integrity. See the truth table below:
 
 <!--diagram-->
 
-| Input  | Input | Output |
-| ------ | ----- | ------ |
-|  `0`   |  `0`  |   `0`  |
-|  `1`   |  `0`  |   `1`  |
-|  `0`   |  `1`  |   `1`  |
-|  `1`   |  `1`  |   `0`  |
+| Input A | Output |
+| ------- | ------ |
+|   `0`   |   `1`  |
+|   `1`   |   `0`  |
 
 NOT simply flips the output from `0` to `1` and vice-versa. In electronic engineering, the NOT gate is called an *inverter* as it will invert the output. Usually, it's combined with other logic gates to make: NAND, NOR and NXOR. As a fun fact, NAND gates are the basis for solid-state storage used in flash drives and solid-state drives (SSDs).
 
 Using NOT NOT results in a double negative effect similar to statements made in English such as: *"I will not not leave the house today"*. Also, using two minus signs together negates them into a plus `1 -- 1 = 2`
+
+| Input A | Input B | Output |
+| ------- | ------  | ------ |
 
 ### Boolean order of operations
 
@@ -109,7 +110,13 @@ Much like the mathematical operators from Section 2, logical operators are evalu
 
 ## Bitwise operations
 
-## Compare boolean and bitwise operations
+The Boolean logic operators in Python only compare the whole integers. However, the separate bitwise operators allow comparison of the individual binary digits (bits) that comprise the integer.
+
+### Two's complement
+
+
+
+### Compare boolean and bitwise operations
 
 Let's start by assigning two variables `i` and `j`:
 
