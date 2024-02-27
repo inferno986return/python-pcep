@@ -61,19 +61,42 @@ In electronics, there are logic gates which take inputs and produce different ou
 
 AND is a conjunction, all inputs must be a `1` to get an output of `1`, as per the truth table below:
 
-<!--diagram, truth table-->
+<!--diagram-->
+
+| Input  | Input | Output |
+| ------ | ----- | ------ |
+|  `0`   |  `0`  |   `0`  |
+|  `1`   |  `0`  |   `0`  |
+|  `0`   |  `1`  |   `0`  |
+|  `1`   |  `1`  |   `1`  |
 
 > Wiktionary defines **disjunction** as: (mathematics) A logical operator that results in “true” when some of its operands are true.
 
-OR is a disjunction, it is flexible so if at least 1 input is a `1` then the output will be `1`
+OR is a disjunction and it is flexible. If at least 1 input is a `1` then the output will be `1`. See the truth table below:
 
-<!--diagram, truth table-->
+<!--diagram-->
+
+| Input  | Input | Output |
+| ------ | ----- | ------ |
+|  `0`   |  `0`  |   `0`  |
+|  `1`   |  `0`  |   `1`  |
+|  `0`   |  `1`  |   `1`  |
+|  `1`   |  `1`  |   `1`  |
 
 NOT simply flips the output from `0` to `1` and vice-versa. In electronic engineering, the NOT gate is called an *inverter* as it will invert the output.
 
 Using NOT NOT results in a double negative effect similar to statements made in English such as: *"I will not not leave the house today"*. Also, using two minus signs together negates them into a plus `1 -- 1 = 2`
 
-XOR is exclusive OR which means one or the other, but not both. This makes it the opposite of AND.
+XOR is exclusive OR which means one or the other, but not both making it the opposite of AND. See the truth table below:
+
+<!--diagram-->
+
+| Input  | Input | Output |
+| ------ | ----- | ------ |
+|  `0`   |  `0`  |   `0`  |
+|  `1`   |  `0`  |   `1`  |
+|  `0`   |  `1`  |   `1`  |
+|  `1`   |  `1`  |   `0`  |
 
 ### Boolean order of operations
 
