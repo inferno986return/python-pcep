@@ -55,7 +55,7 @@ The PCEP example for `c0 = 15` might be incorrect. Here's my output:
 
 ## Logical expressions
 
-In electronics, there are logic gates. In the PCEP, you need to know these three: AND, OR, NOT
+In electronics, there are logic gates which take inputs and produce different outputs. In the PCEP, you need to know these four: AND, OR, XOR NOT
 
 >  Wiktionary defines **conjuction** as: (logic) The proposition resulting from the combination of two or more propositions using the `∧` operator.
 
@@ -73,7 +73,9 @@ NOT simply flips the output from `0` to `1` and vice-versa. In electronic engine
 
 Using NOT NOT results in a double negative effect similar to statements made in English such as: *"I will not not leave the house today"*. Also, using two minus signs together negates them into a plus `1 -- 1 = 2`
 
-### Order of operations
+XOR is exclusive OR which means one or the other, but not both. This makes it the opposite of AND.
+
+### Boolean order of operations
 
 Much like the mathematical operators from Section 2, logical operators are evaluated in a fixed order. You could use the mnemonic `NAXO`:
 
