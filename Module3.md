@@ -83,7 +83,7 @@ OR is a disjunction and it is flexible. If at least 1 input is a `1` then the ou
 |  `0`   |  `1`  |   `1`  |
 |  `1`   |  `1`  |   `1`  |
 
-XOR is exclusive OR which means one or the other, but not both making it the opposite of AND. See the truth table below:
+XOR is exclusive OR which means one or the other, but not both making it the opposite of AND. As a fun fact, XOR is used for the parity bit in RAID 5 setups to verify data integrity. See the truth table below:
 
 <!--diagram-->
 
