@@ -130,9 +130,29 @@ Positive integers are easy! Just add up the bits, the equivalent Python:
 
 `0b111`
 
-For negative integers, it gets tricky and we need to perform some steps:
+For negative integers, it gets tricky and we need to perform some steps to get `-7` decimal:
 
+1. Convert to one's complement, this means flipping the bits:
 
+| 8 | 4 | 2 | 1 |
+|---|---|---|---|
+|`1`|`0`|`0`|`0`|
+
+2. Add one to the right-most column. In binary addition `0 + 1 = 1`:
+
+| 8 | 4 | 2 | 1 |
+|---|---|---|---|
+|`1`|`0`|`0`|`1`|
+
+Key Rules of Binary Addition:
+
+`0 + 0 = 0`
+
+`0 + 1 = 1`
+
+`1 + 0 = 1`
+
+`1 + 1 = 0` (with a carry-over of 1)
 
 ### Bit shifting left (`<<`) and right (`>>`)
 
