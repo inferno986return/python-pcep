@@ -118,7 +118,21 @@ The Boolean logic operators in Python only compare the whole integers. However, 
 
 ### Two's complement
 
-Two's compliment...
+Two's complement is the standard form for representing binary. All Python integers are signed, meaning they use a sign digit to represent positive and negative numbers. To represent binary, we need at least 4 bits (i.e. a nibble) and start with decimal `7`:
+
+| 8 | 4 | 2 | 1 |
+|---|---|---|---|
+|`0`|`1`|`1`|`1`|
+
+Positive integers are easy! Just add up the bits, the equivalent Python:
+
+`print(bin(7))`
+
+`0b111`
+
+For negative integers, it gets tricky and we need to perform some steps:
+
+
 
 ### Bit shifting left (`<<`) and right (`>>`)
 
