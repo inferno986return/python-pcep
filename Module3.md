@@ -107,10 +107,10 @@ Using NOT NOT results in a double negative effect similar to statements made in 
 
 Much like the mathematical operators from Section 2, logical operators are evaluated in a fixed order. You could use the mnemonic `NAXO`:
 
-1. NOT
-2. AND
-3. XOR
-4. OR
+1. **N**OT
+2. **A**ND
+3. **X**OR
+4. **O**R
 
 ## Bitwise operations
 
@@ -144,15 +144,12 @@ For negative integers, it gets tricky and we need to perform some steps to get `
 |---|---|---|---|
 |`1`|`0`|`0`|`1`|
 
-Key Rules of Binary Addition:
+These are the key rules for binary addition:
 
-`0 + 0 = 0`
-
-`0 + 1 = 1`
-
-`1 + 0 = 1`
-
-`1 + 1 = 0` (with a carry-over of 1)
+1. `0 + 0 = 0`
+2. `0 + 1 = 1`
+3. `1 + 0 = 1`
+4. `1 + 1 = 0` (with a carry-over of 1 to the next bit to the left)
 
 ### Working with single bits within an integer
 
@@ -172,15 +169,13 @@ Let's check the digit's status (i.e. whether it's a `0` or `1`) by using bitwise
 the_mask = 2**3  # Creates a mask with a 1 at the 3rd bit position (weight of 2^3)
 
 if flag_register & the_mask:
-
   print("My bit is set (1)")
    
 else:
-
   print("My bit is reset (0)")
 ```
 
-In this example, we get an `8`.
+In this example, we get an `8` which means there is a `1` on the 3rd position:
 
 ### Bit shifting left (`<<`) and right (`>>`)
 
@@ -194,14 +189,17 @@ Conversely, Bitwise right shifting `>>` shifts all bits in a number to the right
 
 Let's start by assigning two variables `i` and `j`:
 
-`i = 15`
-
-`j = 22`
+```
+i = 15
+j = 22
+```
 
 Now assuming these variables are 32-bit integers, their binary values will be as follows:
 
-`i: 00000000000000000000000000001111`
-`j: 00000000000000000000000000010110`
+```
+i: 00000000000000000000000000001111
+j: 00000000000000000000000000010110
+```
 
 Now let's Boolean AND them together:
 
