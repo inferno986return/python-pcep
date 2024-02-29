@@ -154,6 +154,32 @@ Key Rules of Binary Addition:
 
 `1 + 1 = 0` (with a carry-over of 1)
 
+### Working with single bits within an integer
+
+Bitwise operators make it possible to alter individual bits within an integer. For example, let's take the hexadecimal value `0x1234` (decimal `4660`) and assign it to the variable `flag_register`:
+
+`flag_register = 0x1234`
+
+Each bit is effectively its own boolean value (i.e. each binary number is either true or false). We only care about the 3rd digit from the right:
+
+`flag_register = 1001000110x00`
+
+Let's check the digit's status (i.e. whether it's a `0` or `1`) by using bitwise AND (`&`) to create a "bit mask" which isolates individual bits within a binary number. We can define the position we want by using exponentiation, which is nice and simple:
+
+> "No one cared who I was until I put on the mask." — Bane, The Dark Knight Rises (2012)
+
+`the_mask = 2**3  # Creates a mask with a 1 at the 3rd bit position (weight of 2^3)`
+
+`if flag_register & the_mask:`
+
+  `print("My bit is set (1)")`
+   
+`else:`
+
+  `print("My bit is reset (0)")`
+
+In this example, we get an `8`
+
 ### Bit shifting left (`<<`) and right (`>>`)
 
 Shifting moves the bits of an integer to enlarge it or make it smaller.
