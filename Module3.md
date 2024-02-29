@@ -168,17 +168,19 @@ Let's check the digit's status (i.e. whether it's a `0` or `1`) by using bitwise
 
 > "No one cared who I was until I put on the mask." — Bane, The Dark Knight Rises (2012)
 
-`the_mask = 2**3  # Creates a mask with a 1 at the 3rd bit position (weight of 2^3)`
+```
+the_mask = 2**3  # Creates a mask with a 1 at the 3rd bit position (weight of 2^3)
 
-`if flag_register & the_mask:`
+if flag_register & the_mask:
 
-  `print("My bit is set (1)")`
+  print("My bit is set (1)")
    
-`else:`
+else:
 
-  `print("My bit is reset (0)")`
+  print("My bit is reset (0)")
+```
 
-In this example, we get an `8`
+In this example, we get an `8`.
 
 ### Bit shifting left (`<<`) and right (`>>`)
 
