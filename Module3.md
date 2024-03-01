@@ -169,7 +169,7 @@ These are the key rules for binary addition:
 
 3. Re-add the sign bit?
 
-
+Examples in the PCEP and elsewhere prefer to use 32-bit signed integers when demonstrating two's compliment. In reality, Python has dynamic variables and integer capacity can theoretically be as large as the RAM of the computer running the interpreter allows.
 
 ### Working with single bits within an integer
 
