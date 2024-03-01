@@ -203,12 +203,22 @@ else:
 In this example, we get an `8` which means there is a `1` on the 3rd position:
 
 ### Bit shifting left (`<<`) and right (`>>`)
+>TL;DR: Bit shifting moves the bits around to make the number larger or smaller. Fortunately, there are simple formulae for calculating them so you don't have to carry a lot of bits when performing binary addition.
 
 Shifting moves the bits of an integer to enlarge it or make it smaller.
 
-Bitwise left shifting `<<` shifts all bits in a number to the left by a specified number of positions. It can be calculated using the formula - `x << y = x * y ** y`
+Bitwise left shifting `<<` shifts all bits in a number to the left by a specified number of positions. It can be calculated using the formula: `x << y = x * y ** y`
 
-Conversely, Bitwise right shifting `>>` shifts all bits in a number to the right by a specified number of positions. It can be calculated using the formula (I've used floor division to force an integer) - `x << y = x // y ** y`
+`print(4 << 2) # 4 * (2 ** 2)`
+
+`16`
+
+Conversely, bitwise right shifting `>>` shifts all bits in a number to the right by a specified number of positions. It can be calculated using the formula (I've used floor division to force an integer) - `x << y = x // y ** y`
+
+`print(4 >> 2) # 4 // (2 ** 2)`
+
+`1`
+
 
 ### Compare boolean and bitwise operations
 
