@@ -113,6 +113,7 @@ Much like the mathematical operators from Section 2, logical operators are evalu
 4. **O**R
 
 ## Bitwise operations
+> Probably cheating, but I find for integers (`i`) you can use a minus (`-`) and then add 1. Such as: `~1 = -2`, `~3 = -3`, `~4 = -4`
 
 The Boolean logic operators in Python only compare the whole integers. However, the separate bitwise operators allow comparison of the individual binary digits (bits) that comprise the integer.
 
