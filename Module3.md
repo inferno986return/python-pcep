@@ -120,17 +120,21 @@ The Boolean logic operators in Python only compare the whole integers. However, 
 
 Bitwise NOT (`~`) is represented using a tilde symbol and flips the bits of an integer. Let's use decimal `5` as an example:
 
-| - | 4 | 2 | 1 |
+| 8 | 4 | 2 | 1 |
 |---|---|---|---|
 |`0`|`1`|`0`|`1`|
 
-From adding `1 + 4 = 5`, so that's nice and easy. Now to flip it:
+From adding `1 + 4 = 5`, so that's nice and easy. Now to flip it which is called One's compliment:
 
-| - | 4 | 2 | 1 |
+| 8 | 4 | 2 | 1 |
 |---|---|---|---|
 |`1`|`0`|`1`|`0`|
 
+Add a bit to the right column:
 
+| 8 | 4 | 2 | 1 |
+|---|---|---|---|
+|`1`|`0`|`1`|`1`|
 
 ### Two's complement
 
