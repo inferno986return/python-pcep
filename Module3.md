@@ -116,11 +116,27 @@ Much like the mathematical operators from Section 2, logical operators are evalu
 
 The Boolean logic operators in Python only compare the whole integers. However, the separate bitwise operators allow comparison of the individual binary digits (bits) that comprise the integer.
 
+### Bitwise NOT (`~`)
+
+Bitwise NOT (`~`) is represented using a tilde symbol and flips the bits of an integer. Let's use decimal `5` as an example:
+
+| - | 4 | 2 | 1 |
+|---|---|---|---|
+|`0`|`1`|`0`|`1`|
+
+From adding `1 + 4 = 5`, so that's nice and easy. Now to flip it:
+
+| - | 4 | 2 | 1 |
+|---|---|---|---|
+|`1`|`0`|`1`|`0`|
+
+
+
 ### Two's complement
 
-Two's complement is the standard form for representing signed numbers in binary. All Python integers are signed, meaning they use a sign digit to represent positive and negative numbers. To represent binary, we need at least 4 bits (i.e. a nibble) and start with decimal `7`:
+Two's complement is the standard form for representing signed numbers in binary. All Python integers are signed, meaning they use a sign bit on the furthest left column to represent positive (`0`) and negative (`1`) numbers. To represent binary, we need at least 4 bits (i.e. a nibble) and start with decimal `7`:
 
-| 8 | 4 | 2 | 1 |
+| - | 4 | 2 | 1 |
 |---|---|---|---|
 |`0`|`1`|`1`|`1`|
 
@@ -132,15 +148,15 @@ Positive integers are easy! Just add up the bits, the equivalent Python:
 
 For negative integers, it gets tricky and we need to perform some steps to get `-7` decimal:
 
-1. Convert to one's complement, this means flipping the bits:
+1. Convert to one's complement, this means flipping the bits which is the bitwise NOT (`~`) operation.
 
-| 8 | 4 | 2 | 1 |
+| - | 4 | 2 | 1 |
 |---|---|---|---|
 |`1`|`0`|`0`|`0`|
 
-2. Add one to the right-most column. In binary addition `0 + 1 = 1`:
+2. Add one to the right-most column. In this case, the binary addition is `0 + 1 = 1`.
 
-| 8 | 4 | 2 | 1 |
+| - | 4 | 2 | 1 |
 |---|---|---|---|
 |`1`|`0`|`0`|`1`|
 
@@ -150,6 +166,10 @@ These are the key rules for binary addition:
 2. `0 + 1 = 1`
 3. `1 + 0 = 1`
 4. `1 + 1 = 0` (with a carry-over of 1 to the next bit to the left)
+
+3. Re-add the sign bit?
+
+
 
 ### Working with single bits within an integer
 
