@@ -252,4 +252,21 @@ Next, we have bitwise:
 
 `bit = i & j`
 
+## Lists
+
+A list is a collection of values (usually integers or strings) as a single variable datatype. For example:
+
+`my_list = [1,2,3,4,5]`
+
+Python lists are heterogeneous, which means that almost any datatype can be inserted as an item into a list. However, for the PCEP examples, the lists comprise of integers.
+
+`print(my_list[1])`
+
+`2`
+
+Items within a list can be referenced using an index in square brackets. Remember that lists count from zero, so `[0]` is the first item. But using a minus index counts the list items from right to left, for example:
+
+`print(my_list[-1])`
+
+`3`
 
