@@ -258,7 +258,7 @@ A list is a collection of values (usually integers or strings) as a single varia
 
 `my_list = [1,2,3,4,5]`
 
-Python lists are heterogeneous, which means that almost any datatype can be inserted as an item into a list. However, for the PCEP examples, the lists comprise of integers.
+Python lists are heterogeneous, which means that almost any datatype can be inserted as an item into a list (even other lists, which are called nested lists). However, for the PCEP examples, the lists comprise of integers.
 
 `print(my_list[1])`
 
@@ -282,3 +282,5 @@ print(list2)
 ```
 
 The output here is `2` as the original list was modified and `list2` merely references `list1`.
+
+### List slicing
