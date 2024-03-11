@@ -254,24 +254,38 @@ Next, we have bitwise:
 
 ## Lists
 
-A list is a collection of values (usually integers or strings) as a single variable datatype. For example:
+A list is a collection of values (usually integers or strings) as a single variable datatype: For example, let's start with an empty list by denoting it with square brackets `[]`:
+
+`my_list = []`
+
+Then fill it with some simple integer values:
 
 `my_list = [1,2,3,4,5]`
 
-Python lists are heterogeneous, which means that almost any datatype can be inserted as an item into a list (even other lists, which are called nested lists). However, for the PCEP examples, the lists comprise of integers.
+Python lists are heterogeneous, which means that almost any datatype can be inserted as an item into a list (even other lists, which are called nested lists). However, for the PCEP examples, the lists comprise of integers:
+
+`mixed_list = [True, 1.0, 2, "This is a string."]`
+
+Items within a list can be referenced using an index in square brackets. Remember that lists count from zero, so `[0]` is the first item within a list variable.
 
 `print(my_list[1])`
 
 `2`
 
-Items within a list can be referenced using an index in square brackets. Remember that lists count from zero, so `[0]` is the first item. But using a minus index counts the list items from right to left, for example:
+But using a minus starting from `[-1]`, index counts the list items from right to left, for example:
 
 `print(my_list[-1])`
 
-`3`
+`5`
 
-### Lists are referenced
-An interesting feature of Python lists is that are referenced in memory when assigned (like how pointers in C will *point* to the memory address of the variable rather than the variable itself). So if you assign a list to another variable, if the original list gets updated then so will the other:
+Confusingly, Python will ignore the minus `-` in `[-0]` as an index and just return the first element from left to right:
+
+`print(my_list[-0])`
+
+`1`
+
+### List variables are referenced
+An interesting feature of Python lists is that are referenced in memory when assigned (like how pointers in C will *point* to the memory address of the variable rather than the variable itself) and therefore behave differently to integers and floats. So if you assign a list to another variable, if the original list gets updated then so will the other:
 
 ```
 list1 = [0]
