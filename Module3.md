@@ -270,3 +270,15 @@ Items within a list can be referenced using an index in square brackets. Remembe
 
 `3`
 
+### Lists are referenced
+An interesting feature of Python lists is that are referenced in memory when assigned (like how pointers in C will *point* to the memory address of the variable rather than the variable itself). So if you assign a list to another variable, if the original list gets updated then so will the other:
+
+```
+list1 = [0]
+list2 = list1
+list1[0] = 2
+
+print(list2)
+```
+
+The output here is `2` as the original list was modified and `list2` merely references `list1`.
