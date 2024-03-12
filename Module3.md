@@ -321,7 +321,7 @@ print(list2)
 ```
 `[0, 1, 2, 3, 4, 5]`
 
-However, I question the practical usage of this slice, as the same effect can be achieved without the slice `[:]` by using the more efficient `copy()` method. Though the `copy()` method isn't mentioned in the PCEP notes:
+However, I question the practical usage of this slice, as the same effect can be achieved without the slice `[:]` by using the more efficient `copy()` method, especially for larger lists with a lot of items. Though the `copy()` method isn't mentioned in the PCEP notes:
 
 ```
 list = [0,1,2,3,4,5]
