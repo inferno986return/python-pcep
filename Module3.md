@@ -310,7 +310,7 @@ print(list2)
 
 With slice `[1:3]`, the output will take indices (plural of index) `1` and `2`. Much like the `range()` the end index is always one less than the number specified.
 
-Using a slice without indices `[:]` encompasses all the items and creates a duplicate of the list:
+Using a slice without indices `[:]` encompasses all the items and creates a duplicate of the list. Merely assigning a list to variable creates a reference as mentioned earlier:
 
 ```
 list = [0,1,2,3,4,5]
@@ -319,11 +319,11 @@ print(list2)
 ```
 `[0, 1, 2, 3, 4, 5]`
 
-Though I question its practical usage, as the same effect can be achieved without the slice `[:]`:
+However, I question the practical usage of this slice, as the same effect can be achieved without the slice `[:]` by using the more efficient `copy()` method. Though the `copy()` method isn't mentioned in the PCEP notes:
 
 ```
 list = [0,1,2,3,4,5]
-list2 = list
+list2 = list.copy()
 print(list2)
 ```
 `[0, 1, 2, 3, 4, 5]`
