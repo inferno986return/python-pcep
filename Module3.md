@@ -266,13 +266,13 @@ Python lists are heterogeneous, which means that almost any datatype can be inse
 
 `mixed_list = [True, 1.0, 2, "This is a string."]`
 
-Items within a list can be referenced using an index in square brackets. Remember that lists count from zero, so `[0]` is the first item within a list variable.
+elements within a list can be referenced using an index in square brackets. Remember that lists count from zero, so `[0]` is the first item within a list variable.
 
 `print(my_list[1])`
 
 `2`
 
-But using a minus starting from `[-1]`, index counts the list items from right to left, for example:
+But using a minus starting from `[-1]`, index counts the list elements from right to left, for example:
 
 `print(my_list[-1])`
 
@@ -299,7 +299,7 @@ The output here is `2` as the original list was modified and `list2` merely refe
 
 ### List slicing
 
-List slicing allows the duplication and manipulation of lists by defining the items using their index and a colon `:`. Let's start with a simple list with a slice of `[1:3]`:
+List slicing allows the duplication and manipulation of lists by defining the elements using their index and a colon `:`. Let's start with a simple list with a slice of `[1:3]`:
 
 ```
 list = [0,1,2,3,4,5]
@@ -312,7 +312,7 @@ With slice `[1:3]`, the output will take indices (plural of index) `1` and `2`. 
 
 #### List duplication
 
-Using a slice without indices `[:]` encompasses all the items and creates a duplicate of the list. Merely assigning a list to a variable creates a reference as mentioned earlier:
+Using a slice without indices `[:]` encompasses all the elements and creates a duplicate of the list. Merely assigning a list to a variable creates a reference as mentioned earlier:
 
 ```
 list = [0,1,2,3,4,5]
@@ -321,7 +321,7 @@ print(list2)
 ```
 `[0, 1, 2, 3, 4, 5]`
 
-However, I question the practical usage of this slice, as the same effect can be achieved without the slice `[:]` by using the more efficient `copy()` method, especially for larger lists with a lot of items. Though the `copy()` method isn't mentioned in the PCEP notes:
+However, I question the practical usage of this slice, as the same effect can be achieved without the slice `[:]` by using the more efficient `copy()` method, especially for larger lists with a lot of elements. Though the `copy()` method isn't mentioned in the PCEP notes:
 
 ```
 list = [0,1,2,3,4,5]
@@ -329,3 +329,10 @@ list2 = list.copy()
 print(list2)
 ```
 `[0, 1, 2, 3, 4, 5]`
+
+#### Using list slices and `del`
+
+`del` is pretty flexible and it's efficient too. It will purge elements from memory, which is important for large and complicated Python programs. List elements can be bulk deleted by referencing them in a slice:
+
+
+It can also delete all the elements in a list by using the colon slice `[:]` leaving just an empty list:
