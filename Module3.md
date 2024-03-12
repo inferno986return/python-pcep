@@ -298,3 +298,14 @@ print(list2)
 The output here is `2` as the original list was modified and `list2` merely references `list1`.
 
 ### List slicing
+
+List slicing allows the duplication and manipulation of lists by defining the items using their index and a colon `:`. Let's start with a simple list with a slice of `[1:3]`:
+
+```
+list = [0,1,2,3,4,5]
+list2 = list[1:3]
+print(list2)
+```
+`[1, 2]`
+
+With slice `[1:3]`, the output will take indices (plural of index) `1` and `2`. Much like the `range()` the end index is always one less than the number specified.
