@@ -312,7 +312,7 @@ With slice `[1:3]`, the output will take indices (plural of index) `1` and `2`. 
 
 #### Negative list indices
 
-Using a negative index number in the slice will remove omit the elements up to that number...
+Using a negative index number in the slice as the start will empty the list to `[]`, such as `[-1:1]`. Using a negative index as the end value will remove elements from right to left such as `[1:-]`. Just using `[-1:]` will remove all the elements from the list except the last element.
 
 #### List duplication
 
