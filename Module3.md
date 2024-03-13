@@ -310,6 +310,10 @@ print(list2)
 
 With slice `[1:3]`, the output will take indices (plural of index) `1` and `2`. Much like the `range()` the end index is always one less than the number specified.
 
+#### Negative list indices
+
+Using a negative index number in the slice will remove omit the elements up to that number...
+
 #### List duplication
 
 Using a slice without indices `[:]` encompasses all the elements and creates a duplicate of the list. Merely assigning a list to a variable creates a reference as mentioned earlier:
