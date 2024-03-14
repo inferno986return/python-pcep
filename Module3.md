@@ -340,3 +340,27 @@ print(list2)
 
 
 It can also delete all the elements in a list by using the colon slice `[:]` leaving just an empty list:
+
+#### LAB: Operating with lists ‒ basics
+
+```
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+# my_list = set(my_list)
+# my_list = list(my_list)
+
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+tidied_list = []
+
+for i in range(len(my_list)):
+  if my_list[i] not in my_list[i+1:]:  # Check if element is in remaining list
+    tidied_list.append(my_list[i])
+
+my_list = tidied_list[:]
+del tidied_list
+
+print(my_list)  # Output: [1, 2, 4, 6, 9]
+
+
+print("The list with unique elements only:")
+print(my_list)
+```
