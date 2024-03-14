@@ -343,6 +343,10 @@ It can also delete all the elements in a list by using the colon slice `[:]` lea
 
 #### LAB: Operating with lists ‒ basics
 
+This was a tricky lab, though I found a solution that uses slices to `my_list` to check for duplicate elements, creates a temporary tidied-up list, uses the tidied-up list as the new `my_list` and then finally deletes the `tidied_list` as it's unneeded.
+
+The cheat way to do this is to convert the list to a set which will automatically remove duplicates (sets do not allow duplicate elements), then back to a list.
+
 ```
 my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
 # my_list = set(my_list)
