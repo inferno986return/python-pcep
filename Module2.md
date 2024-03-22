@@ -87,7 +87,7 @@ Using an exponential with `E` creates a float value. Though as usual this can be
 
 The operators in Python are by default left-side bound except exponentiation.
 
-### Division `/`, floor division `//` and modulo `%`
+### Three ways to divide – Division `/`, floor division `//` and modulo `%`
 
 Python has three built-in forms of division:
 
