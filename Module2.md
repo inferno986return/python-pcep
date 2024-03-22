@@ -102,7 +102,6 @@ Modulo can be manually calculated with these steps. For example, let's try `2 % 
 3. Subtract the result from the original dividend, `2 - 0` (which is two `2`)
 4. The remainder is two `2` in this example.
 
-
 In summary, division always outputs floats and both floor division and modulo always output integers
 
 If it's easier, you could refer to them as *float division* and *integer division* respectively. Ceiling division is the opposite of floor division, but there's no built-in operator for it and it is outside the scope of the PCEP.
