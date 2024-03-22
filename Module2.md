@@ -95,9 +95,17 @@ Python has three built-in forms of division:
 2. **Floor division** (`//`) creates an integer by rounding the output to the lowest number and then removing all the values beyond the decimal point. For example, running floor division on these outputs `3` each time: `3.1`, `3.5`, `3.9`
 3. **Modulo** (`%`) gives the remainder of a division as an integer. It can be useful for checking divisibility i.e. whether 9 is divisible by 3 or determining if a value is even.
 
+Modulo can be manually calculated with these steps. For example, let's try `2 % 5`:
+
+1. Divide the dividend (first number, two `2`) and divisor (second number, five `5`) normally `2 // 5`. All decimal quotients less (results) are rounded to the nearest integer – zero `0` in this case.
+2. Multiply the quotient (zero `0`) by the divisor (five `5`), `0 * 5 ` (which is zero `0`)
+3. Subtract the result from the original dividend, `2 - 0` (which is two `2`)
+4. The remainder is two `2` in this example.
+
+
 In summary, division always outputs floats and both floor division and modulo always output integers
 
-If it's easier, you could refer to them as *float division* and *integer division* respectively. Ceiling division is the opposite of floor division, but there's no built-in operator for it and is outside the scope of the PCEP.
+If it's easier, you could refer to them as *float division* and *integer division* respectively. Ceiling division is the opposite of floor division, but there's no built-in operator for it and it is outside the scope of the PCEP.
 
 It may also be outside the scope of the PCEP, but you may as well know the terminology: dividend / divisor = quotient
 
