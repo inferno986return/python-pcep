@@ -97,10 +97,10 @@ Python has three built-in forms of division:
 
 Modulo can be manually calculated with these steps. For example, let's try `2 % 5`:
 
-1. Divide the dividend (first number, two `2`) and divisor (second number, five `5`) normally `2 // 5`. All decimal quotients less (results) are rounded to the nearest integer – zero `0` in this case.
-2. Multiply the quotient (zero `0`) by the divisor (five `5`), `0 * 5 ` (which is zero `0`)
-3. Subtract the result from the original dividend, `2 - 0` (which is two `2`)
-4. The remainder is two `2` in this example.
+1. **Divide** the dividend (first number, two `2`) and divisor (second number, five `5`) normally `2 // 5`. All decimal quotients less (results) are rounded to the nearest integer – zero `0` in this case.
+2. **Multiply** the quotient (zero `0`) by the divisor (five `5`), `0 * 5 ` (which is zero `0`)
+3. **Subtract** the result from the original dividend, `2 - 0` (which is two `2`)
+4. The **remainder** is two `2` in this example.
 
 In summary, division always outputs floats and both floor division and modulo always output integers
 
