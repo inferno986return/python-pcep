@@ -105,15 +105,15 @@ Modulo can be manually calculated with these steps. For example, let's try `2 % 
 Refer to and test this sample function:
 
 ```
-def modulo(x,y):
-    z = x // y # Divide
+def modulo(x, y):
+    z = x // y # Divide and force an integer
     m = z * y # Multiply
     r = x - m # Subtract
     return r
 
 x = int(input("x: "))
 y = int(input("y: "))
-print("Remainder:", modulo(x,y))
+print("Remainder:", modulo(x, y))
 print("Should be:", x % y)
 ```
 
