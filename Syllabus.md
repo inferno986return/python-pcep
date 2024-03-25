@@ -51,7 +51,7 @@ Objectives covered by the block (7 exam items)
 * bitwise operators: `~` `&` `^` `|` `<<` `>>`
 * Boolean operators: `not`, `and`, `or`
 * Boolean expressions
-* relational operators ( == != > >= < <= )
+* relational operators ( `==` `!=` `>` `>=` `<` `<=` )
 * the accuracy of floating-point numbers
 * type casting
 
