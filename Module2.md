@@ -167,5 +167,6 @@ For the PCEP, these datatypes are the only ones covered though there are many mo
 These are covered in much more detail in later modules:
 
 * List – a collection of values of any datatype in any order and with duplicates (very flexible): `[0,1,2,3,4,5,"potato",True]`
-* Tuple – an immutable ordered collection of variables with no duplicate values such as: `(1,2,3,4,5)`
+* Tuple – an immutable ordered collection of variables with no duplicate values such as: `(1,2,3,4,5, "apple")`
 * Dictionary – a collection of key:value pairs, similar to a list. Since Python 3.6, they are ordered by default and no longer randomised: `["sandwich:chicken","drink:orange_juice","soup:tomato"]`
+* `None` – an empty value equivalent to NULL in other programming languages. Technically a datatype of its own which is returned by all functions that have no `return` statement.
