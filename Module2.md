@@ -69,6 +69,12 @@ Exponentiation is notably the *only operator which is right-side bound by defaul
 
 `256`
 
+Which is equivalent to:
+
+`print(2 ** (2 ** 3))`
+
+`256`
+
 However, we can force left-side binding by using brackets:
 
 `print(( 2** 2) **3)`
