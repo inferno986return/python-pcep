@@ -112,9 +112,9 @@ Refer to and test this sample function:
 
 ```
 def modulo(x, y):
-    z = x // y # Divide and force an integer
-    m = z * y # Multiply
-    r = x - m # Subtract
+    z = x // y # Divide as usual, but force an integer
+    m = z * y # Multiply the quotient by the divisor
+    r = x - m # Subtract the dividend1 to find remainder
     return r
 
 x = int(input("x: "))
