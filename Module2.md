@@ -123,7 +123,7 @@ print("Remainder:", modulo(x, y))
 print("Should be:", x % y)
 ```
 
-In summary, division always outputs floats and both floor division and modulo always output integers
+In summary, division `/` always outputs a **float** and both floor division `//` and modulo `%` always output an **integer**.
 
 If it's easier, you could refer to them as *float division* and *integer division* respectively. Ceiling division is the opposite of floor division, but there's no built-in operator for it and it is outside the scope of the PCEP.
 
@@ -135,7 +135,7 @@ It may also be outside the scope of the PCEP, but you may as well know the termi
 
 See also: https://www.mathsisfun.com/numbers/division.html
 
-And finally, division by zero is mathematically undefined. Therefore it will throw an error if you try to use zero (`0`) as the divisor:
+And finally, division by zero is mathematically undefined. Therefore it will throw a `ZeroDivisionError` error if you try to use zero (`0`) as the divisor which will stop the program execution by default:
 
 `3 / 0`
 
