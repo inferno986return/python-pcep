@@ -161,7 +161,7 @@ For the PCEP, these datatypes are the only ones covered though there are many mo
 
 * Integer – whole numbers such as `1`, `10` and `100`
 * Float – decimal numbers such as `1.0`, `.5` and `1.23`
-* String – a character or series of characters using single (`'`) or double (`"`) quotes such as `"Hello"`, `10` and `"This is a sentence."`
+* String – a character or series of characters using single (`'`) or double (`"`) quotes such as `"Hello"`, `"10"` and `"This is a sentence."`
 * Boolean – either `True` or `False` (booleans are case-sensitive)
 
 These are covered in much more detail in later modules:
