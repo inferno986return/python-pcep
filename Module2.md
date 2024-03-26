@@ -163,3 +163,5 @@ For the PCEP, these datatypes are the only ones covered though there are many mo
 * Float – decimal numbers such as `1.0`, `.5` and `1.23`
 * String – a character or series of characters using single (`'`) or double (`"`) quotes such as `"Hello"`, `10` and `"This is a sentence."`
 * Boolean – either `True` or `False` (booleans are case-sensitive)
+* List – a collection of values of any datatype in any order and with duplicates (very flexible): [0,1,2,3,4,5,"potato",True]
+* Tupe – an immutable ordered collection of variables with no duplicate values such as: (1,2,3,4,5)
