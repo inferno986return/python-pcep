@@ -6,7 +6,7 @@
 
 ### Underscores in integers and floats
 
-Python (apparently since Python 3.6) supports using underscores (_) as a substitute for commas for breaking up large integer and float variables such as 100,000 being represented as `100_000`. With strings, obviously, the underscore is part of the string.
+Python (apparently since Python 3.6) supports using underscores (_) as a substitute for commas for breaking up large integer and float variables such as 100,000 being represented as `100_000`. This is purely cosmetic for the benefit of human-readability and doesn't affect the value in any way. With strings, the underscore is part of the string.
 
 `print(100_000)`
 
