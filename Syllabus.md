@@ -78,7 +78,7 @@ Objectives covered by the block (8 exam items)
 * iterating through sequences
 * expanding loops with `while-else` and `for-else`
 * nesting loops and conditional statements
-* controlling loop execution with break and continue
+* controlling loop execution with `break` and `continue`
 
 ## Section 3: Data Collections – Tuples, Dictionaries, Lists, and Strings (25%)
 
@@ -116,10 +116,10 @@ Objectives covered by the block (7 exam items)
 
 * constructing strings
 * indexing, slicing, immutability
-* escaping using the \ character
+* escaping using the `\` character
 * quotes and apostrophes inside strings
 * multi-line strings
-vbasic string functions and methods
+* basic string functions and methods
 
 ## Section 4: Functions and Exceptions (28%)
 
