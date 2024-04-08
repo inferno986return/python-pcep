@@ -9,8 +9,9 @@ When learning a programming language, it's common to start by outputting "Hello 
 ```
 print("Hello World")
 ```
-
-`Hello World`
+```
+Hello World
+```
 
 The use of single quotes `'` or double quotes `"` is used to define a string variable which holds `"Hello World"`.
 
@@ -33,8 +34,9 @@ It is possible to print multiple outputs at once by using a comma `,` between th
 ```
 print("Hello", "World")
 ```
-
-`Hello World`
+```
+Hello World
+```
 
 The comma will add a space between the variables and keep them on one line as the newline `\n` is at the end of the `print()` statement, at least by default. Let's try outputting `"Hello"` and `"World"` over separate lines, but using only one `print()` statement:
 
@@ -47,7 +49,17 @@ Hello
 World
 ```
 
-The arguments `sep=` and `end=` can be optionally used at the end of a `print()` statement like so:
+We can also use a tab `\t` to indent the output like so:
+
+```
+print("\tHello World")
+```
+
+```
+    Hello World
+```
+
+The arguments `sep=` and `end=` can be optionally used at the end of a `print()` statement:
 
 
 
