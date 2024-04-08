@@ -6,18 +6,21 @@
 
 When learning a programming language, it's common to start by outputting "Hello World" by using the built-in print function. So for Python 3:
 
-`print("Hello World")`
+```
+print("Hello World")
+```
 
 `Hello World`
 
-The use of single quotes `'` or double quotes `"` is used to define a string variable which holds "Hello World".
+The use of single quotes `'` or double quotes `"` is used to define a string variable which holds `"Hello World"`.
 
-By default, `print()` automatically adds a newline `\n` character:
+By default, each `print()` statement automatically adds a newline `\n` character to separate outputs:
 
 ```
 print("Hello")
 print("World")
 ```
+
 This outputs the following:
 
 ```
@@ -27,11 +30,22 @@ World
 
 It is possible to print multiple outputs at once by using a comma `,` between them, in this case `"Hello"` and `"World"` are two separate strings: 
 
-`print("Hello", "World")`
+```
+print("Hello", "World")
+```
 
 `Hello World`
 
-The comma will add a space between the variables and keep them on one line as the newline `\n` is at the end of the `print()` statement, at least by default.
+The comma will add a space between the variables and keep them on one line as the newline `\n` is at the end of the `print()` statement, at least by default. Let's try outputting `"Hello"` and `"World"` over separate lines, but using only one `print()` statement:
+
+```
+print("Hello\nWorld")
+```
+
+```
+Hello
+World
+```
 
 The arguments `sep=` and `end=` can be optionally used at the end of a `print()` statement like so:
 
