@@ -2,7 +2,7 @@
 
 ## Section 2.1: The "Hello World! program
 
-`print()` is an important built-in statement in Python as it allows an easy way to output data to the console. In Python 3, `print()` is built into the language itself and can take no arguments, where it only prints a blank line. 
+`print()` is an important built-in function in Python as it allows an easy way to output data to the console. In Python 3, `print()` is built into the language itself and can take no arguments, where it only prints a blank line. 
 
 When learning a programming language, it's common to start by outputting "Hello World" by using the built-in print function. So for Python 3:
 
@@ -38,7 +38,7 @@ print("Hello", "World")
 Hello World
 ```
 
-The comma will add a space between the variables and keep them on one line as the newline `\n` is at the end of the `print()` statement, at least by default. Let's try outputting `"Hello"` and `"World"` over separate lines, but using only one `print()` statement:
+The comma will add a space between the variables and keep them on one line as the newline `\n` is at the end of the `print()` statement, at least by default. Let's try outputting `"Hello"` and `"World"` over separate lines, but using only one `print()` function:
 
 ```
 print("Hello\nWorld")
@@ -59,7 +59,7 @@ print("\tHello World")
     Hello World
 ```
 
-The arguments `sep=` and `end=` can be optionally used at the end of a `print()` statement:
+The arguments `sep=` and `end=` can be optionally used at the end of a `print()` function:
 
 
 
