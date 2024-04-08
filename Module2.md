@@ -1,12 +1,47 @@
 # Python Essentials 1 - Module 2: Python Data Types, Variables, Operators and Basic I/O Operations
 
-## Section 1: The "Hello World! program
+## Section 2.1: The "Hello World! program
 
-## Section 2: Python literals
+`print()` is an important built-in statement in Python as it allows an easy way to output data to the console. In Python 3, `print()` is built into the language itself and can take no arguments, where it only prints a blank line. 
+
+When learning a programming language, it's common to start by outputting "Hello World" by using the built-in print function. So for Python 3:
+
+`print("Hello World")`
+
+`Hello World`
+
+The use of single quotes `'` or double quotes `"` is used to define a string variable which holds "Hello World".
+
+By default, `print()` automatically adds a newline `\n` character:
+
+```
+print("Hello")
+print("World")
+```
+This outputs the following:
+
+```
+Hello
+World
+```
+
+It is possible to print multiple outputs at once by using a comma `,` between them, in this case `"Hello"` and `"World"` are two separate strings: 
+
+`print("Hello", "World")`
+
+`Hello World`
+
+The comma will add a space between the variables and keep them on one line as the newline `\n` is at the end of the `print()` statement, at least by default.
+
+The arguments `sep=` and `end=` can be optionally used at the end of a `print()` statement like so:
+
+
+
+## Section 2.2: Python literals
 
 ### Underscores in integers and floats
 
-Python (apparently since Python 3.6) supports using underscores (_) as a substitute for commas for breaking up large integer and float variables such as 100,000 being represented as `100_000`. This is purely cosmetic for the benefit of human-readability and doesn't affect the value in any way. With strings, the underscore is part of the string.
+Python (apparently since Python 3.6) supports using underscores (_) as a substitute for commas for breaking up large integer and float variables such as 100,000 being represented as `100_000`. This is purely cosmetic to provide human readability and doesn't affect the value. With strings, the underscore is part of the string.
 
 `print(100_000)`
 
