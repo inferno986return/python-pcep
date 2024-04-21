@@ -59,9 +59,24 @@ print("\tHello World")
     Hello World
 ```
 
-The arguments `sep=` and `end=` can be optionally used at the end of a `print()` function:
+The arguments `sep=` and `end=` can be optionally used at the end of a `print()` function to alter the output. Let's start with `sep=`.
 
+`sep=` will replace the *default use of a space* between outputs with a character of your choice such as a hythen `-` or an asterisk `*`:
 
+`print("Hello","World",sep="-")`
+
+`Hello-World`
+
+`end=` will replace the *default use of a newline* at the end of the line:
+
+```
+print("Hello",end="")
+print("World")
+```
+
+`HelloWorld`
+
+With this example the two strings have just concatenated together to form one simple output using camelcase.
 
 ## Section 2.2: Python literals
 
@@ -79,7 +94,7 @@ Python (apparently since Python 3.6) supports using underscores (_) as a substit
 
 ### Binary, Octal and Hexadecimal
 
-Binary, octal and hexadecimal numbers can be represented as **literals** using this notation. An easy way to remember hexadecimal is that many memory addresses start with `0x` or the simple mnemonic of *box*:
+Binary, octal and hexadecimal numbers can be represented as **literals** using this notation. An easy way to remember hexadecimal is that many memory addresses start with `0x` or you can just use the simple mnemonic of *box*:
 
 | Syntax:      | Numeric base:         | Example: |
 | -------------| --------------------- | -------- |
@@ -138,7 +153,7 @@ Which is equivalent to:
 
 However, we can force left-side binding by using brackets:
 
-`print(( 2** 2) **3)`
+`print((2 ** 2) ** 3)`
 
 `64`
 
@@ -152,7 +167,10 @@ Using an exponential with `E` creates a float value. Though as usual this can be
 
 ### Left-side and right-side binding
 
-The operators in Python are by default left-side bound except exponentiation.
+The operators in Python are by default left-side bound except exponentiation. This means that calculations are performed from left-to-right:
+
+`2 - 1 + 3`
+`4`
 
 ### Three ways to divide – Division `/`, floor division `//` and modulo `%`
 
@@ -186,7 +204,7 @@ print("Should be:", x % y)
 
 In summary, division `/` always outputs a **float** and both floor division `//` and modulo `%` always output an **integer**.
 
-If it's easier, you could refer to them as *float division* and *integer division* respectively. Ceiling division is the opposite of floor division, but there's no built-in operator for it and it is outside the scope of the PCEP.
+If it's easier, you could refer to them as *float division* and *integer division* respectively. Ceiling division is the opposite of floor division, but there's no built-in operator for it and instead there is a function avilable in the built-in `math` library, but this is outside the scope of the PCEP.
 
 It may also be outside the scope of the PCEP, but you may as well know the terminology: dividend / divisor = quotient
 
@@ -203,6 +221,8 @@ And finally, division by zero is mathematically undefined. Therefore it will thr
 `Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero`
+
+In a later module, we discuss how to manage exceptions including divide by zero errors to keep the program running. 😀
 
 ### Variables
 
