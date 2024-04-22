@@ -145,7 +145,7 @@ Exponentiation is the formal mathematical term for multiplying a value by itself
 
 Exponentiation is notably the *only operator which is right-side bound by default* though this can be overridden by using brackets.
 
-`print(2 ** 2 ** 3) # the same as 2^8: 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2`
+`print(2 ** 2 ** 3)`
 
 `256`
 
@@ -160,6 +160,8 @@ However, we can force left-side binding by using brackets:
 `print((2 ** 2) ** 3)`
 
 `64`
+
+You may have realised this is the same as 2<sup>8</sup> (2^8 = 2×2×2×2×2×2×2×2)
 
 Lastly, we have literal exponentiation using the letter `E` for expressing very large (or small numbers) such as 2×10<sup>8</sup> (200,000,000), which would be `2E8` with this notation.
 
