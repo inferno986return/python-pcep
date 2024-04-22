@@ -63,9 +63,12 @@ The arguments `sep=` and `end=` can be optionally used at the end of a `print()`
 
 `sep=` will replace the *default use of a space* between outputs with a character of your choice such as a hythen `-` or an asterisk `*`:
 
-`print("Hello","World",sep="-")`
-
-`Hello-World`
+```
+print("Hello","World",sep="-")
+```
+```
+Hello-World
+```
 
 `end=` will replace the *default use of a newline* at the end of the line:
 
@@ -73,10 +76,11 @@ The arguments `sep=` and `end=` can be optionally used at the end of a `print()`
 print("Hello",end="")
 print("World")
 ```
+```
+HelloWorld
+```
 
-`HelloWorld`
-
-With this example the two strings have just concatenated together to form one simple output using camelcase.
+With this example, the two strings have just concatenated together to form one simple output using CamelCase.
 
 ## Section 2.2: Python literals
 
