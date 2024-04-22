@@ -80,7 +80,16 @@ print("World")
 HelloWorld
 ```
 
-With this example, the two strings have just concatenated together to form one simple output using CamelCase.
+With this example, the two strings have just concatenated together to form one simple output using CamelCase. Note that `sep=` and `end=` are defined at the end of the `print()` function declaration otherwise you'll get a syntax error:
+
+```
+print(sep="&", "Hello", "World")
+```
+
+`File "main.py", line 1
+    print(sep="&", "fish", "chips")
+                  ^
+SyntaxError: positional argument follows keyword argument`
 
 ## Section 2.2: Python literals
 
