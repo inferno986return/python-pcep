@@ -177,6 +177,8 @@ The operators in Python are by default left-side bound except exponentiation. Th
 
 `4`
 
+This is despite the PEMDAS order being addition first and then subtraction. Brackets `()` can be used to force a particular order if that is required.
+
 ### Three ways to divide – Division `/`, floor division `//` and modulo `%`
 
 Python has three built-in forms of division:
