@@ -169,11 +169,11 @@ Lastly, we have literal exponentiation using the uppercase letter `E` (or lowerc
 
 `20000000.0`
 
-A more practical example would Advrogadro's number which is used in chemistry:
+A more practical example would be Avrogadro's constant which is used in chemistry. However, in real life I would recommend using an external library like Scipy or Astropy for this:
 
 `avogadro_number = 6.02E23  # 6.02 x 10^23`
 
-Using an exponential with `E` creates a float value, though as usual this can be forced into an integer by using `int()`.
+Much like division `/`, using an exponential with `E` creates a float value. Though as usual this can be forced into an integer by using `int()`.
 
 ### Left-side and right-side binding
 
