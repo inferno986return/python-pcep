@@ -163,13 +163,17 @@ However, we can force left-side binding by using brackets:
 
 You may have realised this is the same as 2<sup>8</sup> (2^8 = 2×2×2×2×2×2×2×2)
 
-Lastly, we have literal exponentiation using the letter `E` for expressing very large (or small numbers) such as 2×10<sup>8</sup> (200,000,000), which would be `2E8` with this notation.
+Lastly, we have literal exponentiation using the uppercase letter `E` (or lowercase letter `e`) for expressing very large (or very small) numbers such as 200 million (2×10<sup>8</sup> = 200,000,000), which would be `2E8` with this notation.
 
 `print(2E8)`
 
 `20000000.0`
 
-Using an exponential with `E` creates a float value. Though as usual this can be forced into an integer by using `int()`.
+A more practical example would Advrogadro's number which is used in chemistry:
+
+`avogadro_number = 6.02E23  # 6.02 x 10^23`
+
+Using an exponential with `E` creates a float value, though as usual this can be forced into an integer by using `int()`.
 
 ### Left-side and right-side binding
 
