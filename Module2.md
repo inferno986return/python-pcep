@@ -174,6 +174,7 @@ Using an exponential with `E` creates a float value. Though as usual this can be
 The operators in Python are by default left-side bound except exponentiation. This means that calculations are performed from left-to-right:
 
 `2 - 1 + 3`
+
 `4`
 
 ### Three ways to divide – Division `/`, floor division `//` and modulo `%`
@@ -186,7 +187,7 @@ Python has three built-in forms of division:
 
 Modulo can be manually calculated with these steps. For example, let's try `2 % 5`:
 
-1. **Divide** the dividend (first number, two `2`) and divisor (second number, five `5`) normally `2 // 5`. All decimal quotients less (results) are rounded to the nearest integer – zero `0` in this case.
+1. **Divide** the dividend (the first number, two `2`) and divisor (the second number, five `5`) normally `2 // 5`. All decimal quotients less (results) are rounded to the nearest integer – zero `0` in this case.
 2. **Multiply** the quotient (zero `0`) by the divisor (five `5`), `0 * 5 ` (which is zero `0`)
 3. **Subtract** the result from the original dividend, `2 - 0` (which is two `2`)
 4. The **remainder** is two `2` in this example.
