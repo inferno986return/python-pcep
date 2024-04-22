@@ -145,7 +145,7 @@ Exponentiation is the formal mathematical term for multiplying a value by itself
 
 Exponentiation is notably the *only operator which is right-side bound by default* though this can be overridden by using brackets.
 
-`print(2 ** 2 ** 3)`
+`print(2 ** 2 ** 3) # the same as 2^8: 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2`
 
 `256`
 
