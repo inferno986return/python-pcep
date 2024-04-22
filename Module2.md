@@ -222,7 +222,9 @@ And finally, division by zero is mathematically undefined. Therefore it will thr
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero`
 
-In a later module, we discuss how to manage exceptions including divide by zero errors to keep the program running. 😀
+This also applies to floor division `//` where the divisor is a decimal number such as `0.25` or `0.5`.
+
+In a later module, we discuss how to manage exceptions including dividing by zero errors to keep the program running. 😀
 
 ### Variables
 
