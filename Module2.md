@@ -65,7 +65,6 @@ print("\tHello World")
 
 **Tip:** Within the brackets of a function such as `print()`, a **parameter** is the placeholder for the function and **arguments** are the actual values. When using a parameter with an equals sign `=`, these are called **keyword arguments**. You will need to know the definitions of and differences between these three terms for the Python PCEP exam.
 
-<<<<<<< HEAD
 The `print()` function supports 4 parameters which must be defined in this order `sep`, `end`, `file` and `flush`. However, for the Python PCEP we are only concerned with both `sep` and `end`. The parameters `sep=` and `end=` can be optionally used after defining the outputs for a `print()` function to alter the output. Let's start with `sep=`.
 
 By default, the value of `sep` is a space to separate the outputs of the `print()` function, equivalent to `sep=" "`. The initial Hello World program we wrote would look like this and you'll notice there is no difference in the output:
@@ -83,14 +82,6 @@ print("Hello","World",sep="-")
 ```
 
 `Hello-World`
-=======
-```
-print("Hello","World",sep="-")
-```
-```
-Hello-World
-```
->>>>>>> 40194ff424ae88ae7018559dd3a1bd9ffb1ba8c9
 
 By default,`end` uses a newline `\n` to define the end of the line used by the `print()` function. Going back to our first Hello World program, it would look like this and you'll notice the output is also unchanged:
 
@@ -112,20 +103,9 @@ HelloWorld
 
 With this example, the two strings have just concatenated together to form one simple output using CamelCase. Note that `sep=` and `end=` are defined at the end of the `print()` function declaration otherwise you'll get a syntax error:
 
-<<<<<<< HEAD
 With this example the two strings have been concatenated together to form one simple output using CamelCase.
 
 **Advanced learning:** The other two parameters for `print()` are `file` which can save the output of the `print()` function to a file and `flush` is a Boolean value (i.e. `True` or `False`) which clears the output after a new `print()` output has been written. By default, the value of `flush` is `False`.
-=======
-```
-print(sep="&", "Hello", "World")
-```
-
-`File "main.py", line 1
-    print(sep="&", "fish", "chips")
-                  ^
-SyntaxError: positional argument follows keyword argument`
->>>>>>> 40194ff424ae88ae7018559dd3a1bd9ffb1ba8c9
 
 ## Section 2.2: Python literals
 
