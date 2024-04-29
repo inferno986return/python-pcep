@@ -1,10 +1,12 @@
 # Python Essentials 1 - Module 2: Python Data Types, Variables, Operators and Basic I/O Operations
 
 ## Section 2.1: The "Hello World! program
+### Printing "Hello World"
+`print()` is an important built-in function in Python as it allows an easy way to output data to the console. In Python 3, `print()` is built into the language itself and can take no arguments, where it only prints a blank line.
 
-`print()` is an important built-in function in Python as it allows an easy way to output data to the console. In Python 3, `print()` is built into the language itself and can take no arguments, where it only prints a blank line. 
+**Tip:** In Python 2, `print` was a statement instead of a function.
 
-When learning a programming language, it's common to start by outputting "Hello World" by using the built-in print function. So for Python 3:
+When learning a programming language, it's common to start by outputting "Hello World" by using the built-in print function. So for Python 3, this can be done on a single line:
 
 ```
 print("Hello World")
@@ -38,7 +40,7 @@ print("Hello", "World")
 Hello World
 ```
 
-The comma will add a space between the variables and keep them on one line as the newline `\n` is at the end of the `print()` statement, at least by default. Let's try outputting `"Hello"` and `"World"` over separate lines, but using only one `print()` function:
+The comma will add a space between the variables and keep them on one line as the newline `\n` is at the end of the `print()` function, at least by default. Let's try outputting `"Hello"` and `"World"` over separate lines, but using only one `print()` function:
 
 ```
 print("Hello\nWorld")
@@ -59,15 +61,37 @@ print("\tHello World")
     Hello World
 ```
 
-The arguments `sep=` and `end=` can be optionally used at the end of a `print()` function to alter the output. Let's start with `sep=`.
+### The 4 parameters of the `print()` function
 
-`sep=` will replace the *default use of a space* between outputs with a character of your choice such as a hythen `-` or an asterisk `*`:
+**Tip:** Within the brackets of a function such as `print()`, a **parameter** is the placeholder for the function and **arguments** are the actual values. When using a parameter with an equals sign `=`, these are called **keyword arguments**. You will need to know the definitions of and differences between these three terms for the Python PCEP exam.
 
-`print("Hello","World",sep="-")`
+The `print()` function supports 4 parameters which must be defined in this order `sep`, `end`, `file` and `flush`. However, for the Python PCEP we are only concerned with both `sep` and `end`. The parameters `sep=` and `end=` can be optionally used after defining the outputs for a `print()` function to alter the output. Let's start with `sep=`.
+
+By default, the value of `sep` is a space to separate the outputs of the `print()` function, equivalent to `sep=" "`. The initial Hello World program we wrote would look like this and you'll notice there is no difference in the output:
+
+```
+print("Hello World", sep=" ")
+```
+
+`Hello World`
+
+If you define `sep` with something else it will replace the *default use of a space* between outputs with a character of your choice such as a hypthen `-` or an asterisk `*`:
+
+```
+print("Hello","World",sep="-")
+```
 
 `Hello-World`
 
-`end=` will replace the *default use of a newline* at the end of the line:
+By default,`end` uses a newline `\n` to define the end of the line used by the `print()` function. Going back to our first Hello World program, it would look like this and you'll notice the output is also unchanged:
+
+```
+print("Hello World", end="\n")
+```
+
+`Hello World`
+
+With this example, the `end` parameter has been defined without any arguments.
 
 ```
 print("Hello",end="")
@@ -76,7 +100,9 @@ print("World")
 
 `HelloWorld`
 
-With this example the two strings have just concatenated together to form one simple output using camelcase.
+With this example the two strings have been concatenated together to form one simple output using CamelCase.
+
+**Advanced learning:** The other two parameters for `print()` are `file` which can save the output of the `print()` function to a file and `flush` is a Boolean value (i.e. `True` or `False`) which clears the output after a new `print()` output has been written. By default, the value of `flush` is `False`.
 
 ## Section 2.2: Python literals
 
@@ -251,3 +277,9 @@ These are covered in much more detail in later modules:
 * Tuple – an immutable ordered collection of variables with no duplicate values such as: `(1,2,3,4,5, "apple")`
 * Dictionary – a collection of key:value pairs, similar to a list. Since Python 3.6, they are ordered by default and no longer randomised: `["sandwich:chicken","drink:orange_juice","soup:tomato"]`
 * `None` – an empty value equivalent to NULL in other programming languages. Technically a datatype of its own which is returned by all functions that have no `return` statement.
+
+## 3.1 Making decisions in Python
+
+If statements allow conditional branching. Each `if` statement is sepearate
+
+`elif`
