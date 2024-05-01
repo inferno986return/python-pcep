@@ -2,9 +2,9 @@
 My notes and code for learning the Python PCEP. Slowly building this and it may become a Wikibook or published book, not sure. I don't really plan on this being a substitute for the official *Python Essentials 1* course material, but you never know.
 
 ## Syntax highlighting
-*“Welcome to my house! Enter freely. Go safely, and leave something of the happiness you bring.”* ― **Bram Stoker**
+*“Welcome to my house! Enter freely. Go safely, and leave something of the happiness you bring.”* ― **Count Dracula, Bram Stoker**
 
-I will use the Dracula theme for syntax highlighting the code snippets in the eventual PDF and EPUB.
+I will use the Dracula theme for syntax highlighting the code snippets in the eventual PDF and EPUB along with the Twilio Sans Mono font.
 
 ### Dracula colour palette
 This section was taken verbatim from the [Dracula theme GitHub repository](https://github.com/dracula/dracula-theme) as allowed by their use of the MIT License:
