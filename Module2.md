@@ -254,9 +254,9 @@ Alternatively, a quick and lazy way is to estimate the remainder for some modulo
 
 If it's easier, you could refer to them as *float division* and *integer division* respectively. 
 
-**Ceiling division:** Ceiling division is the opposite of floor division, but there's no built-in operator for it and instead there is a function avilable in the built-in `math` library, but this is outside the scope of the PCEP.
+**Beyond the PCEP:** Ceiling division is the opposite of floor division, but there's no built-in operator for it and instead there is a function avilable in the built-in `math` library, but this is outside the scope of the PCEP.
 
-And finally, division by zero is mathematically undefined. Therefore it will throw a `ZeroDivisionError` error if you try to use zero (`0`) as the divisor which will stop the program execution by default:
+And finally, **division by zero** is mathematically undefined. Therefore it will throw a `ZeroDivisionError` error if you try to use zero (`0`) as the divisor in calculation which will stop the program execution by default:
 
 `3 / 0`
 
@@ -275,34 +275,52 @@ Like many interpreted programming languages, Python uses **dynamic variables** w
 Python variable names are *case-sensitive* which means that `y = 1` and `Y = 2` can technically co-exist in the same block of code together while meaning different things. However, this can still cause unnecessary confusion to a human programmer:
 
 ```
-`y = 0`
-`Y = 1`
+y = 0
+Y = 1
 
-`print(y, Y)`
+print(y, Y)
 ```
 
-```
-0 1
-```
+`0 1`
 
 ### Variable datatypes
 
-For the PCEP, these datatypes are the only ones covered though there are many more built into Python 3:
+For the PCEP, these are the only datatypes that are covered and you'll need to know for the exam. However, though there are many more built into Python 3:
 
-* Integer – whole numbers such as `1`, `10` and `100`
-* Float – decimal numbers such as `1.0`, `.5` and `1.23`
-* String – a character or series of characters using single (`'`) or double (`"`) quotes such as `"Hello"`, `"10"` and `"This is a sentence."`
-* Boolean – either `True` or `False` (booleans are case-sensitive)
+* **Integer** – whole numbers such as `1`, `10` and `100`
+* **Float** – decimal numbers such as `1.0`, `.5` and `1.23`
+* **String** – a character or series of characters using single (`'`) or double (`"`) quotes such as `"Hello"`, `"10"` and `"This is a sentence."`
+* **Boolean** – either `True` or `False` (booleans are case-sensitive)
 
 These are covered in much more detail in later modules:
 
-* List – a collection of values of any datatype in any order and with duplicates (very flexible): `[0,1,2,3,4,5,"potato",True]`
-* Tuple – an immutable ordered collection of variables with no duplicate values such as: `(1,2,3,4,5, "apple")`
-* Dictionary – a collection of key:value pairs, similar to a list. Since Python 3.6, they are ordered by default and no longer randomised: `["sandwich:chicken","drink:orange_juice","soup:tomato"]`
-* `None` – an empty value equivalent to NULL in other programming languages. Technically a datatype of its own which is returned by all functions that have no `return` statement.
+* **List** – a collection of values of any datatype in any order and with duplicates (very flexible): `[0,1,2,3,4,5,"potato",True]`
+* **Tuple** – an immutable ordered collection of variables with no duplicate values such as: `(1,2,3,4,5, "apple")`
+* **Dictionary** – a collection of key:value pairs, similar to a list. Since Python 3.6, they are ordered by default and no longer randomised: `["sandwich:chicken","drink:orange_juice","soup:tomato"]`
+* **`None`** – an empty value equivalent to `NULL` in other programming languages. Technically, it is a datatype of its own which is returned by all functions that have no `return` statement.
 
 ## 3.1 Making decisions in Python
 
-If statements allow conditional branching. Each `if` statement is seperate
+If statements allow conditional branching. Each `if` statement is evaluated seperately
 
 `elif`
+
+Let's go back to my source code for the Collatz conjecture lab. I found by accident that by using two separate `if` statements this would create an infinite loop 
+
+c0 = int(input("Enter a number for c0:"))
+steps = 0
+
+while c0 != 1:
+
+    if c0 % 2 == 0:
+       c0 = c0 // 2
+       steps += 1
+       print(c0)
+
+    if c0 % 2 != 0:
+       c0 = c0 * 3 + 1
+       steps += 1
+       print(c0)
+
+print(c0)
+print(f"Steps = {steps}")

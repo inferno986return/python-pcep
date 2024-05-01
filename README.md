@@ -26,9 +26,16 @@ This section was taken verbatim from the [Dracula theme GitHub repository](https
 
 For more details about how to apply these different colors to represent different code symbols, please see the [Dracula Specification](https://spec.draculatheme.com).
 
+## Credits
+
+* idleburg for providing the Creative Commons licences in the beautiful Markdown format
 
 ## Licencing
 
 This book is available under the copyleft [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) licence similar to the Wikimedia Foundation projects such as Wikipedia, Wikibooks and Wikiversity. Please credit me as "Hal Motley" if you use this content. 😀
 
+My Python source code examples are available under the copyfree [The 3-Clause BSD License](https://opensource.org/license/bsd-3-clause).
+
 Dracula Theme is available under the lenient copyfree MIT License – "Copyright (c) 2023 Dracula Theme". I would like to thank the authors [Zeno Rocha](https://github.com/zenorocha/) and [Lucas de França](https://github.com/luxonauta) for making this theme completely free and open-source! You can also purchase Dracula PRO to support them.
+
+Twilio provided Twilio Sans Mono under the copyleft SIL OFL licence.
