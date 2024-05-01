@@ -43,15 +43,15 @@ Objectives covered by the block (7 exam items)
 
 ### PCEP-30-02 1.4 – Choose operators and data types adequate to the problem
 
-* numeric operators: `**` `*` `/` `%` `//` `+` `–`
-* string operators: `*` `+`
+* numeric operators: `**`, `*`, `/`, `%`, `//`, `+`, `–`
+* string operators: `*`, `+`
 * assignment and shortcut operators
 * unary and binary operators
 * priorities and binding
-* bitwise operators: `~` `&` `^` `|` `<<` `>>`
+* bitwise operators: `~`, `&`, `^`, `|`, `<<`, `>>`
 * Boolean operators: `not`, `and`, `or`
 * Boolean expressions
-* relational operators ( `==` `!=` `>` `>=` `<` `<=` )
+* relational operators (`==`, `!=`, `>`, `>=`, `<`, `<=`)
 * the accuracy of floating-point numbers
 * type casting
 
