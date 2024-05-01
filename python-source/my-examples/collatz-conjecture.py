@@ -1,4 +1,5 @@
-# Collatz conjecture - a simplistic yet unsolved mathematical problem
+# collatz-conjecture.py - a simplistic yet unsolved mathematical problem
+# 3-clause BSD License
 
 # The steps for Collatz conjecture are as follows, as per Wikipedia:
 

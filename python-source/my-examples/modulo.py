@@ -1,3 +1,6 @@
+# modulo.py - manually calculate modulo without using the % operator
+# 3-clause BSD License
+
 def modulo(x, y):
     z = x // y # Divide as usual, but force an integer
     m = z * y # Multiply the quotient by the divisor
