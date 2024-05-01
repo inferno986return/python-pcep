@@ -202,30 +202,38 @@ Much like division `/`, using an exponential with `E` creates a float value. Tho
 
 ### Left-side and right-side binding
 
-The operators in Python are by default left-side bound except exponentiation. This means that calculations are performed from left-to-right:
+The operators in Python are by default left-side bound with the only exception being exponentiation `**`. This means that calculations are performed from left-to-right:
 
 `2 - 1 + 3`
 
 `4`
 
-This is despite the PEMDAS order being addition first and then subtraction. Brackets `()` can be used to force a particular order if that is required.
+This is despite the PEMDAS order being addition first and then subtraction. Brackets `()` can be used to override left-side binding and force a particular order if that is required.
 
 ### Three ways to divide – Division `/`, floor division `//` and modulo `%`
 
+It may also be outside the scope of the PCEP, but you may as well know the terminology for division as I use it extensively in this section: dividend / divisor = quotient
+
+* The **dividend** is the number that is being divided. It represents the total amount that you are splitting into equal parts.
+* The **divisor** is the number by which you are dividing the dividend. It represents the number of equal parts you are creating.
+* The **quotient** is the result of the division. It represents the size of each equal part you obtain after dividing the dividend by the divisor.
+
+See also: https://www.mathsisfun.com/numbers/division.html
+
 Python has three built-in forms of division:
 
-1. **Division** (`/`) is the standard division operator which will *always* output a float value. For example, `9 / 3` will output `3.0`
+1. **Division** (`/`) is the standard division operator which will *always* output a float value. For example, `9 / 3` will output `3.0`.
 2. **Floor division** (`//`) creates an integer by rounding the output to the lowest number and then removing all the values beyond the decimal point. For example, running floor division on these outputs `3` each time: `3.1`, `3.5`, `3.9`
 3. **Modulo** (`%`) gives the remainder of a division as an integer. It can be useful for checking divisibility i.e. whether 9 is divisible by 3 or determining if a value is even.
 
 Modulo can be manually calculated with these steps. For example, let's try `2 % 5`:
 
-1. **Divide** the dividend (the first number, two `2`) and divisor (the second number, five `5`) normally `2 // 5`. All decimal quotients less (results) are rounded to the nearest integer – zero `0` in this case.
-2. **Multiply** the quotient (zero `0`) by the divisor (five `5`), `0 * 5 ` (which is zero `0`)
-3. **Subtract** the result from the original dividend, `2 - 0` (which is two `2`)
+1. **Divide the dividend** (the first number, two `2`) and divisor (the second number, five `5`) normally `2 // 5`. All decimal quotients (results) are rounded to the nearest integer – zero `0` in this case.
+2. **Multiply the quotient** (zero `0`) by the divisor (five `5`), `0 * 5 ` (which is zero `0`)
+3. **Subtract the result** from the original dividend, `2 - 0` (which is two `2`)
 4. The **remainder** is two `2` in this example.
 
-Refer to and test this sample function:
+Try a few practice problems on paper to get the hang of it. You can also refer to and test this sample function I made:
 
 ```
 def modulo(x, y):
@@ -240,17 +248,13 @@ print("Remainder:", modulo(x, y))
 print("Should be:", x % y)
 ```
 
-In summary, division `/` always outputs a **float** and both floor division `//` and modulo `%` always output an **integer**.
+Alternatively, a quick and lazy way is to estimate the remainder for some modulo problems is just dividing the dividend and devisor in your head and use the nearest multiple. This only works for me where the *dividend is larger than the divisor*. So instead of `2 % 5`, I can do `11 % 4` and since 4×3=12, the remainder can be guessed as 3.
 
-If it's easier, you could refer to them as *float division* and *integer division* respectively. Ceiling division is the opposite of floor division, but there's no built-in operator for it and instead there is a function avilable in the built-in `math` library, but this is outside the scope of the PCEP.
+**Exam tip:** For the Python PCEP exam, you will need to remember that division `/` always outputs a **float** value and both floor division `//` and modulo `%` always output an **integer** value.
 
-It may also be outside the scope of the PCEP, but you may as well know the terminology: dividend / divisor = quotient
+If it's easier, you could refer to them as *float division* and *integer division* respectively. 
 
-* The **dividend** is the number that is being divided. It represents the total amount that you are splitting into equal parts.
-* The **divisor** is the number by which you are dividing the dividend. It represents the number of equal parts you are creating.
-* The **quotient** is the result of the division. It represents the size of each equal part you obtain after dividing the dividend by the divisor.
-
-See also: https://www.mathsisfun.com/numbers/division.html
+**Ceiling division:** Ceiling division is the opposite of floor division, but there's no built-in operator for it and instead there is a function avilable in the built-in `math` library, but this is outside the scope of the PCEP.
 
 And finally, division by zero is mathematically undefined. Therefore it will throw a `ZeroDivisionError` error if you try to use zero (`0`) as the divisor which will stop the program execution by default:
 

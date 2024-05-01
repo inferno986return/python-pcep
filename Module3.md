@@ -128,7 +128,7 @@ Using NOT NOT results in a double negative effect similar to statements made in 
 
 ### Boolean order of operations
 
-Much like the mathematical operators from Section 2, logical operators are evaluated in a fixed order. You could use the mnemonic `NAXO`:
+Much like how mathematical operators use `PEMDAS`, logical operators are also evaluated in a fixed order. You could use the mnemonic `NAXO`:
 
 1. **N**OT
 2. **A**ND
