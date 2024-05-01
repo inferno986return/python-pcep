@@ -2,7 +2,7 @@
 My notes and code for learning the Python PCEP. Slowly building this and it may become a Wikibook or published book, not sure. I don't really plan on this being a substitute for the official *Python Essentials 1* course material, but you never know.
 
 ## Syntax highlighting
->“Welcome to my house! Enter freely. Go safely, and leave something of the happiness you bring.” ― Bram Stoker
+*“Welcome to my house! Enter freely. Go safely, and leave something of the happiness you bring.”* ― **Bram Stoker**
 
 I will use the Dracula theme for syntax highlighting the code snippets in the eventual PDF and EPUB.
 
@@ -29,6 +29,6 @@ For more details about how to apply these different colors to represent differen
 
 ## Licencing
 
-This book is available under the copyleft [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) licence similar to the Wikimedia Foundation projects such as Wikipedia, Wikibooks and Wikiversity.
+This book is available under the copyleft [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) licence similar to the Wikimedia Foundation projects such as Wikipedia, Wikibooks and Wikiversity. Please credit me as "Hal Motley" if you use this content. 😀
 
 Dracula Theme is available under the lenient copyfree MIT License – "Copyright (c) 2023 Dracula Theme". I would like to thank the authors [Zeno Rocha](https://github.com/zenorocha/) and [Lucas de França](https://github.com/luxonauta) for making this theme completely free and open-source! You can also purchase Dracula PRO to support them.
