@@ -52,6 +52,28 @@ The PCEP example provided for `c0 = 15` might be incorrect and I have informed t
 
 `steps = 17`
 
+This lab wasn't particularly difficult if you understand while loops, if statements, incrementation and the modulo `%` operator. Here's my source code which I tried to write more elegantly that with my first attempt:
+
+```
+c0 = int(input("Enter a number for c0:"))
+steps = 0
+
+while c0 != 1:
+
+    if c0 % 2 == 0:
+       c0 = c0 // 2
+       steps += 1
+       print(c0)
+
+    elif c0 % 2 != 0:
+       c0 = c0 * 3 + 1
+       steps += 1
+       print(c0)
+
+print(c0)
+print(f"Steps = {steps}")
+```
+
 # Section 3
 
 ## Logical expressions

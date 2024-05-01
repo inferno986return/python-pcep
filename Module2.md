@@ -1,4 +1,4 @@
-# Python Essentials 1 - Module 2: Python Data Types, Variables, Operators and Basic I/O Operations
+# Python Essentials 1 – Module 2: Python Data Types, Variables, Operators and Basic I/O Operations
 
 ## Section 2.1: The "Hello World! program
 ### Printing "Hello World"
