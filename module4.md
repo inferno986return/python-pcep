@@ -1,4 +1,4 @@
-# Module 4 – Functions, Tuples, Dictionaries, Exceptions, and Data Processing
+# Python Essentials 1 – Module 4: Functions and Exceptions
 
 ## Global variables
 

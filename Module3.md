@@ -1,4 +1,4 @@
-# Python Essentials 1 - Module 3: 
+# Python Essentials 1 – Module 3: Data Collections (Tuples, Dictionaries, Lists, and Strings)
 
 ## Section 2
 
