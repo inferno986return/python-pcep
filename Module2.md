@@ -266,7 +266,7 @@ In a later module, we discuss how to manage exceptions including dividing by zer
 
 ### Variables
 
-Like many interpreted programming languages, Python uses **dynamic variables** which means a variable's datatype is defined by the value itself rather than specific datatype keyword designation. 
+Like many interpreted programming languages, Python uses **dynamic variables** which means a variable's datatype is defined by the value itself rather than specific datatype keyword designation.
 
 Python variable names are *case-sensitive* which means that `y = 1` and `Y = 2` can technically co-exist in the same block of code together while meaning different things. However, this can still cause unnecessary confusion to a human programmer:
 
@@ -299,6 +299,6 @@ These are covered in much more detail in later modules:
 
 ## 3.1 Making decisions in Python
 
-If statements allow conditional branching. Each `if` statement is sepearate
+If statements allow conditional branching. Each `if` statement is seperate
 
 `elif`
