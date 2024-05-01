@@ -7,7 +7,7 @@ My notes and code for learning the Python PCEP. Slowly building this and it may 
 I will use the Dracula theme for syntax highlighting the code snippets in the eventual PDF and EPUB.
 
 ### Dracula colour palette
-This section was taken verbatim from the Dracula theme's GitHub repository as allowed by their MIT licence – "Copyright (c) 2023 Dracula Theme":
+This section was taken verbatim from the Dracula theme's GitHub repository as allowed by their use of the MIT License:
 
 | Palette      | Hex       | RGB           | HSL             | ![Color Picker Boxes](https://draculatheme.com/images/color-boxes/eyedropper.png)   |
 | ------------ | --------- | ------------- | --------------- | ----------------------------------------------------------------------------------- |
@@ -29,5 +29,6 @@ For more details about how to apply these different colors to represent differen
 
 ## Licencing
 
-CC BY-SA 4.0 Attribution-ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
+This book is available under the copyleft [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) licence similar to the Wikimedia Foundation projects such as Wikipedia, Wikibooks and Wikiversity.
 
+Dracula Theme is available under the lenient copyfree MIT License – "Copyright (c) 2023 Dracula Theme". I would like to thank the authors [Zeno Rocha](https://github.com/zenorocha/) and [Lucas de França](https://github.com/luxonauta) for making this theme completely free and open-source! You can also purchase Dracula PRO to support them.
