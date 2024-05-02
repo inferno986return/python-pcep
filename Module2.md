@@ -148,6 +148,15 @@ bananas = 3
 print("Jim has", apples, "apples and", bananas, "bananas.")
 ```
 
+Or alternatively, using plus `+` operator instead of commas `,`:
+
+```
+apples = 2
+bananas = 3
+
+print("Jim has" + apples + "apples and" + bananas + "bananas.")
+```
+
 ## Section 2.2: Python literals
 
 A literal is a variable where the human can easily determine its value from the datatype.
