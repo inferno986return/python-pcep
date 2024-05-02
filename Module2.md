@@ -128,9 +128,9 @@ Hello-World.
 
 **Advanced learning:** The other two parameters for `print()` are `file` which can save the output of the `print()` function to a file and `flush` which is a Boolean value (i.e. `True` or `False`) that clears the output after a new `print()` output has been written. By default, the value of `flush` is `False`.
 
-### Printing f-strings
+### Printing formatted string literals (f-strings)
 
-While not part of the PCEP syllabus, f-strings are an elegant way to print variable values along with a string by specifying the variables using curly braces `{}`:
+While not part of the PCEP syllabus, formatted string literals (f-strings) are an elegant way to print variable values along with a string by specifying the variables using curly braces `{}`:
 
 ```
 apples = 2
@@ -139,7 +139,7 @@ bananas = 3
 print(f"Jim has {apples} apples and {bananas} bananas.")
 ```
 
-Without an f-string, we have to break up the output which looks messier:
+Without an f-string, we have to break up the output which looks messy and less human-readable:
 
 ```
 apples = 2
@@ -147,7 +147,6 @@ bananas = 3
 
 print("Jim has", apples, "apples and", bananas, "bananas.")
 ```
-
 
 ## Section 2.2: Python literals
 
