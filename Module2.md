@@ -117,7 +117,7 @@ File "<stdin>", line 1
 SyntaxError: positional argument follows keyword argument
 ```
 
-The keyword arguments can be defined in any order as long as they are after the function's parameters. Such as:
+The keyword arguments can be defined in any order as long as they are after the function's arguments. Such as:
 
 ```
 print("Hello", "World", end=".", sep="-")
@@ -126,7 +126,7 @@ print("Hello", "World", end=".", sep="-")
 Hello-World.
 ```
 
-**Advanced learning:** The other two parameters for `print()` are `file` which can save the output of the `print()` function to a file and `flush` which is a Boolean value (i.e. `True` or `False`) that clears the output after a new `print()` output has been written. By default, the value of `flush` is `False`.
+**Advanced learning:** The other two keyword arguments for `print()` are `file` which can save the output of the `print()` function to a file and `flush` which is a Boolean value (i.e. `True` or `False`) that clears the output after a new `print()` output has been written. By default, the value of `flush` is `False`.
 
 ### Printing formatted string literals (f-strings)
 
