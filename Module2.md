@@ -130,7 +130,7 @@ Hello-World.
 
 ### Printing formatted string literals (f-strings)
 
-While not part of the PCEP syllabus, formatted string literals (f-strings) are an elegant way to print variable values along with a string by specifying the variables using curly braces `{}`:
+While not part of the PCEP syllabus, starting from Python 3.6 you can use formatted string literals (f-strings) which are an elegant way to print variable values along with a string by specifying the variables using curly braces `{}`:
 
 ```
 apples = 2
@@ -139,22 +139,22 @@ bananas = 3
 print(f"Jim has {apples} apples and {bananas} bananas.")
 ```
 
-Without an f-string, we have to break up the output which looks messy and less human-readable:
+Without an f-string, we have to break up the output and add spaces to the strings which looks messy and less human-readable:
 
 ```
 apples = 2
 bananas = 3
 
-print("Jim has", apples, "apples and", bananas, "bananas.")
+print("Jim has ", apples, " apples and ", bananas, " bananas.")
 ```
 
-Or alternatively, using plus `+` operator instead of commas `,`:
+Or alternatively, you could use the plus `+` operator instead of commas `,`:
 
 ```
 apples = 2
 bananas = 3
 
-print("Jim has" + apples + "apples and" + bananas + "bananas.")
+print("Jim has " + apples + " apples and " + bananas + " bananas.")
 ```
 
 ## Section 2.2: Python literals
@@ -163,7 +163,7 @@ A literal is a variable where the human can easily determine its value from the 
 
 ### Underscores in integers and floats
 
-Python (apparently since Python 3.6) supports using underscores (_) as a substitute for commas for breaking up large integer and float variables such as 100,000 being represented as `100_000`.
+Python (apparently since Python 3.6) supports using underscores (_) as a substitute for commas for breaking up large integer and float variables such as 100,000 being represented as `100_000`:
 
 `print(100_000)`
 
@@ -171,7 +171,7 @@ Python (apparently since Python 3.6) supports using underscores (_) as a substit
 
 **Tip:** This underscore notation for integers and floats is purely cosmetic to provide human readability and doesn't affect the value.
 
-However, for strings the underscore is part of the string.
+However, for strings the underscore is part of the string:
 
 `print("100_000")`
 
