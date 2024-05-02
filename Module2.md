@@ -63,9 +63,11 @@ print("\tHello World")
 
 ### The 4 parameters of the `print()` function
 
-**Tip:** Within the brackets of a function such as `print()`, a **parameter** is the placeholder for the function and **arguments** are the actual values. When using a parameter with an equals sign `=`, these are called **keyword arguments**. You will need to know the definitions of and differences between these three terms for the Python PCEP exam.
+**Tip:** You will need to know the definitions of and differences between these three terms for the Python PCEP exam:
 
-The `print()` function supports 4 parameters which must be defined in this order `sep`, `end`, `file` and `flush`. However, for the Python PCEP we are only concerned with both `sep` and `end`. The parameters `sep=` and `end=` can be optionally used after defining the outputs for a `print()` function to alter the output. Let's start with `sep=`.
+Within the brackets of a function such as `print()`, a **parameter** is the placeholder for the function's arguments and **arguments** are the actual values passed to the function. When using a parameter with an equals sign `=`, these are called **keyword arguments** and can specified in any order. 
+
+The `print()` function supports 4 keyword arugments which are `sep`, `end`, `file` and `flush`. However, for the Python PCEP we are only concerned with both `sep` and `end`. The parameters `sep=` and `end=` can be optionally used after defining the outputs for a `print()` function to alter the output. Let's start with `sep=`.
 
 By default, the value of `sep` is a space to separate the outputs of the `print()` function, equivalent to `sep=" "`. The initial Hello World program we wrote would look like this and you'll notice there is no difference in the output:
 
@@ -101,27 +103,74 @@ print("World")
 HelloWorld
 ```
 
-With this example, the two strings have just concatenated together to form one simple output using CamelCase. Note that `sep=` and `end=` are defined at the end of the `print()` function declaration otherwise you'll get a syntax error:
+With this example, the two strings have just concatenated together to form one simple output using CamelCase. 
 
-With this example the two strings have been concatenated together to form one simple output using CamelCase.
+Note that the keyword `sep=` and `end=` are defined at the end of the `print()` function declaration otherwise you'll get a syntax error:
 
-**Advanced learning:** The other two parameters for `print()` are `file` which can save the output of the `print()` function to a file and `flush` is a Boolean value (i.e. `True` or `False`) which clears the output after a new `print()` output has been written. By default, the value of `flush` is `False`.
+```
+print(sep="7", "Hello", "World")
+```
+```
+File "<stdin>", line 1
+    print(sep="7", "Hello", "World")
+                                   ^
+SyntaxError: positional argument follows keyword argument
+```
+
+The keyword arguments can be defined in any order as long as they are after the function's parameters. Such as:
+
+```
+print("Hello", "World", end=".", sep="-")
+```
+```
+Hello-World.
+```
+
+**Advanced learning:** The other two parameters for `print()` are `file` which can save the output of the `print()` function to a file and `flush` which is a Boolean value (i.e. `True` or `False`) that clears the output after a new `print()` output has been written. By default, the value of `flush` is `False`.
+
+### Printing f-strings
+
+While not part of the PCEP syllabus, f-strings are an elegant way to print variable values along with a string by specifying the variables using curly braces `{}`:
+
+```
+apples = 2
+bananas = 3
+
+print(f"Jim has {apples} apples and {bananas} bananas.")
+```
+
+Without an f-string, we have to break up the output which looks messier:
+
+```
+apples = 2
+bananas = 3
+
+print("Jim has", apples, "apples and", bananas, "bananas.")
+```
+
 
 ## Section 2.2: Python literals
 
+A literal is a variable where the human can easily determine its value from the datatype.
+
 ### Underscores in integers and floats
 
-Python (apparently since Python 3.6) supports using underscores (_) as a substitute for commas for breaking up large integer and float variables such as 100,000 being represented as `100_000`. This is purely cosmetic to provide human readability and doesn't affect the value. With strings, the underscore is part of the string.
+Python (apparently since Python 3.6) supports using underscores (_) as a substitute for commas for breaking up large integer and float variables such as 100,000 being represented as `100_000`.
 
 `print(100_000)`
 
 `100000`
+
+**Tip:** This underscore notation for integers and floats is purely cosmetic to provide human readability and doesn't affect the value.
+
+However, for strings the underscore is part of the string.
 
 `print("100_000")`
 
 `100_000`
 
 ### Binary, Octal and Hexadecimal
+//Could explain numeric bases
 
 Binary, octal and hexadecimal numbers can be represented as **literals** using this notation. An easy way to remember hexadecimal is that many memory addresses start with `0x` or you can just use the simple mnemonic of *box*:
 
@@ -168,17 +217,23 @@ Exponentiation is the formal mathematical term for multiplying a value by itself
 
 * **Exponentiation** (`**`) is two asterisks put together. For example, `2 ** 2` will output `4`.
 
-Exponentiation is notably the *only operator which is right-side bound by default* though this can be overridden by using brackets.
+Exponentiation is notably the *only default operator which is right-side bound by default* though this can be overridden by using brackets.
 
-`print(2 ** 2 ** 3)`
-
-`256`
+```
+print(2 ** 2 ** 3)
+```
+```
+256
+```
 
 Which is equivalent to:
 
-`print(2 ** (2 ** 3))`
-
-`256`
+```
+print(2 ** (2 ** 3))
+```
+```
+256
+```
 
 However, we can force left-side binding by using brackets:
 
@@ -212,7 +267,7 @@ This is despite the PEMDAS order being addition first and then subtraction. Brac
 
 ### Three ways to divide – Division `/`, floor division `//` and modulo `%`
 
-It may also be outside the scope of the PCEP, but you may as well know the terminology for division as I use it extensively in this section: dividend / divisor = quotient
+You may as well know the terminology for division as I use it extensively in this section: dividend / divisor = quotient
 
 * The **dividend** is the number that is being divided. It represents the total amount that you are splitting into equal parts.
 * The **divisor** is the number by which you are dividing the dividend. It represents the number of equal parts you are creating.
@@ -224,9 +279,9 @@ Python has three built-in forms of division:
 
 1. **Division** (`/`) is the standard division operator which will *always* output a float value. For example, `9 / 3` will output `3.0`.
 2. **Floor division** (`//`) creates an integer by rounding the output to the lowest number and then removing all the values beyond the decimal point. For example, running floor division on these outputs `3` each time: `3.1`, `3.5`, `3.9`
-3. **Modulo** (`%`) gives the remainder of a division as an integer. It can be useful for checking divisibility i.e. whether 9 is divisible by 3 or determining if a value is even.
+3. **Modulo** (`%`) gives the remainder of a division as an integer. It can be useful for checking divisibility i.e. whether 9 is divisible by 3 or determining if a value is even (divisible by 2).
 
-Modulo can be manually calculated with these steps. For example, let's try `2 % 5`:
+Modulo can be manually calculated with these four steps. For example, let's try `2 % 5`:
 
 1. **Divide the dividend** (the first number, two `2`) and divisor (the second number, five `5`) normally `2 // 5`. All decimal quotients (results) are rounded to the nearest integer – zero `0` in this case.
 2. **Multiply the quotient** (zero `0`) by the divisor (five `5`), `0 * 5 ` (which is zero `0`)
@@ -239,7 +294,7 @@ Try a few practice problems on paper to get the hang of it. You can also refer t
 def modulo(x, y):
     z = x // y # Divide as usual, but force an integer
     m = z * y # Multiply the quotient by the divisor
-    r = x - m # Subtract the dividend1 to find remainder
+    r = x - m # Subtract the dividend to find remainder
     return r
 
 x = int(input("x: "))
@@ -305,8 +360,9 @@ If statements allow conditional branching. Each `if` statement is evaluated sepe
 
 `elif`
 
-Let's go back to my source code for the Collatz conjecture lab. I found by accident that by using two separate `if` statements this would create an infinite loop 
+Let's go back to my source code for the Collatz conjecture lab. I found by accident that by using two separate `if` statements this would create an infinite loop as each condition is evaluated separately.
 
+```
 c0 = int(input("Enter a number for c0:"))
 steps = 0
 
@@ -324,3 +380,4 @@ while c0 != 1:
 
 print(c0)
 print(f"Steps = {steps}")
+```
