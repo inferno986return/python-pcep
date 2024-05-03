@@ -107,3 +107,42 @@ line 6, in function_2
            ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
 TypeError: unsupported operand type(s) for *: 'NoneType' and 'NoneType'
 ```
+
+6. What is the result of the following division?
+
+```
+1 // 2
+```
+
+A. is equal to 0.5
+B. cannot be predicted
+**C. is equal to 0**
+D. is equal to 0.0
+
+This one is also very easy as it's a simple floor division operation so `1 // 2 = 0`. Floor division will *only output integers* or a DivideByZeroError in the case the divisor is zero `0`.
+
+7. What is the output of the following snippet:
+
+```
+def func(a, b):
+    return b ** a
+ 
+ 
+print(func(b=2, 2))
+```
+
+**A. is erroneous**
+B. will output `2`
+C. will output `4`
+D. will output `None`
+
+The order of positional arguments does matter, so the Python 3 interpreter won't allow this `print()` function and subsequently generates a SyntaxError.
+
+```
+line 5
+    print(func(b=2, 2))
+                     ^
+SyntaxError: positional argument follows keyword argument
+```
+
+However, this can be fixed by swapping the positional arguments to `print(func(2, b=2))` which outputs `4`.
