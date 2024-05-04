@@ -195,4 +195,6 @@ B. `[0, 1, 9, 16]`
 **C. `[0, 1, 4, 9]`**
 D. `[0, 1, 4, 16]`
 
-I got this one incorrect too and be careful with those nested list indicies for the `del` statement...
+I got this one incorrect too. Looking at the possible answers does at least give a hint, so the initial `my_list = [0,1,4,9,16]` as `range(5)` generates the numbers from 0 to 4 using *list comprehension* (defining a list's elements based on a formula rather than using individual literals). 
+
+Be careful with those nested list indicies for the `del` statement as it goes to the 2nd element of the list `4` and then uses that index to delete the 4th element `16`.
