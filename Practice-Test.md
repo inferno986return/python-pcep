@@ -1,7 +1,7 @@
 # Cisco SkillsForAll PCEP Practice Test
 ## Current score 46% out of 75% – 61.33% of the way there!
 
-1. What is the output of this code snippet?
+### Question 1: What is the output of this code snippet?
 
 ```
 my_list = [1, 2]
@@ -40,7 +40,7 @@ The key point here is that *the list is being modified while it’s being iterat
 
 I also hadn't factored in that the `insert()` method will insert elements before the index specified.
 
-2. The meaning of a positional argument is determined by:
+### Question 2: The meaning of a positional argument is determined by:
 
 A. its connection with existing variables
 
@@ -52,7 +52,7 @@ D. its value
 
 The term *positional argument* reveals the answer, it's really that simple! For example, in the function `example(a,b)` the paramers are `a` and `b`, but the values they represent have to be in the defined order which are positional arguments.
 
-3. Which of the following sentences are true about the code? (Select two answers)
+### Question 3: Which of the following sentences are true about the code? (Select two answers)
 
 ```
 nums = [1, 2, 3]
@@ -66,7 +66,7 @@ C. vals is longer than nums
 
 Lists are unusual as when they are assigned to other variables like this they are merely referenced so `nums` and `vals` are the same list. This means that if `nums` changed in any way, `vals` would also be affected. Either a slice or method would need to be used to make nums a separate duplicate list.
 
-4. An operator able to check whether two values are not equal is coded as:
+### Question 4: An operator able to check whether two values are not equal is coded as:
 
 **A. `!=`**
 
@@ -80,7 +80,7 @@ Another easy question! `!=` is the only not equal symbol (at least in this list)
 
 **Advanced learning:** At least two of these operators can be used in other programming languages, just not Python 3. `=/=` is used in Erlang as the "Exactly not equal to" operator and `<>` can be used in some SQL and BASIC dialects to represent not equal to.
 
-5. What is the output of this code snippet?
+### Question 5: What is the output of this code snippet?
 
 ```
 def function_1(a):
@@ -108,7 +108,7 @@ line 6, in function_2
 TypeError: unsupported operand type(s) for *: 'NoneType' and 'NoneType'
 ```
 
-6. What is the result of the following division?
+### Question 6: What is the result of the following division?
 
 ```
 1 // 2
@@ -121,7 +121,7 @@ D. is equal to 0.0
 
 This one is also very easy as it's a simple floor division operation so `1 // 2 = 0`. Floor division will *only output integers* or a DivideByZeroError in the case the divisor is zero `0`.
 
-7. What is the output of the following snippet:
+### Question 7: What is the output of the following snippet:
 
 ```
 def func(a, b):
@@ -146,3 +146,53 @@ SyntaxError: positional argument follows keyword argument
 ```
 
 However, this can be fixed by swapping the positional arguments to `print(func(2, b=2))` which outputs `4`.
+
+### Question 8: What value will be assigned to the `x` variable?
+
+```
+z = 0
+y = 10
+x = y < z and z > y or y < z and z < y
+```
+
+**A. `False`**
+B. `1`
+C. `True`
+D. `0`
+
+This was a tricky one for me and I initially got this incorrect as `True`. Remember `NAXO` which is the Boolean algebra order of operations, this means the `and` comparisons happen first and then `or` comparison with these 4 steps: 
+
+1. `(y < z and z > y) or (y < z and z < y)`
+2. `(False and False) or (False and True)`
+3. `False or False`
+4. `False`
+
+### Question 9: Which of the following variable names are illegal and will cause the SyntaxError exception? (Select two answers)
+
+**A. for**
+**B. in**
+C. print
+D. In
+
+`for` and `in` are reserved keywords in Python 3, using them as variables will result in a `SyntaxError`. As for the other answers, Python 2 used to reserve `print` as a statement, though since becoming a built-in function this restriction was dropped. Also since Python 3 is case-sensititive `In` is technically allowed. I wouldn't recommend either though as it may add unneccessary complexity to your source code.
+
+### Question 10: What is the output of the following snippet?
+
+```
+my_list = [x * x for x in range(5)]
+ 
+ 
+def fun(lst):
+    del lst[lst[2]]
+    return lst
+ 
+ 
+print(fun(my_list))
+```
+
+A. `[1, 4, 9, 16]`
+B. `[0, 1, 9, 16]`
+**C. `[0, 1, 4, 9]`**
+D. `[0, 1, 4, 16]`
+
+I got this one incorrect too and be careful with those nested list indicies for the `del` statement...
