@@ -199,7 +199,7 @@ I got this one incorrect too. Looking at the possible answers does at least give
 
 Be careful with those nested list indicies for the `del` statement as it goes to the 2nd element of the list `4` and then uses that index to delete the 4th element `16`.
 
-### Question 11:What is the output of the following piece of code?
+### Question 11: What is the output of the following piece of code?
 
 ```
 x = 1
@@ -234,4 +234,4 @@ B. `1 1`
 C. `0 0`
 D. `1 0`
 
-The answer is `0 1` but I didn't get that correct. I first mistook the caret `^` which means bitwise XOR for bitwise AND whch uses the ampersand `&`. Then I didn't consider the two bits which comprise the variables `a = 01, b = 00`
+The answer is `0 1` but I didn't get that correct. I first mistook the caret `^` which means bitwise XOR for bitwise AND whch uses the ampersand `&`. Then I didn't consider the two bits which comprise the variables `a = 01, b = 00`, then `a = 01 ^ 00` sets `a = 1`, same for `b = 01 ^ 00` sets `b = 1` therefore `a = 01 ^ 01` sets `a` back to zero (0) as they have identical inputs. 
