@@ -136,7 +136,6 @@ Much like how mathematical operators use `PEMDAS`, logical operators are also ev
 4. **O**R
 
 ## Bitwise operations
-> Probably cheating, but I find for integers (`i`) you can use a minus (`-`) and then add 1. Such as: `~1 = -2`, `~3 = -3`, `~4 = -4`
 
 The Boolean logic operators in Python only compare the whole integers. However, the separate bitwise operators allow comparison of the individual binary digits (bits) that comprise the integer.
 
@@ -161,6 +160,7 @@ Add a bit to the right column:
 |`1`|`0`|`1`|`1`|
 
 ### Two's complement
+> Probably cheating, but I find for integers (`i`) you can use a minus (`-`) and then add 1. Such as: `~1 = -2`, `~3 = -3`, `~4 = -4`
 
 Two's complement is the standard form for representing signed numbers in binary. All Python integers are signed, meaning they use a sign bit on the furthest left column to represent positive (`0`) and negative (`1`) numbers. To represent binary, we need at least 4 bits (i.e. a nibble) and start with decimal `7`:
 
@@ -205,9 +205,9 @@ Bitwise operators make it possible to alter individual bits within an integer. F
 
 `flag_register = 0x1234`
 
-Each bit is effectively its own boolean value (i.e. each binary number is either true or false). We only care about the 3rd digit from the right:
+Each bit is effectively its own boolean value (i.e. each binary number is either true or false). We only care about the 3rd digit from the right (marked with the `y`):
 
-`flag_register = 1001000110x00`
+`flag_register = 1001000110y00`
 
 Let's check the digit's status (i.e. whether it's a `0` or `1`) by using bitwise AND (`&`) to create a "bit mask" which isolates individual bits within a binary number. We can define the position we want by using exponentiation, which is nice and simple:
 
@@ -217,10 +217,10 @@ Let's check the digit's status (i.e. whether it's a `0` or `1`) by using bitwise
 the_mask = 2**3  # Creates a mask with a 1 at the 3rd bit position (weight of 2^3)
 
 if flag_register & the_mask:
-  print("My bit is set (1)")
+    print("My bit is set (1)")
    
 else:
-  print("My bit is reset (0)")
+    print("My bit is reset (0)")
 ```
 
 In this example, we get an `8` which means there is a `1` on the 3rd position:

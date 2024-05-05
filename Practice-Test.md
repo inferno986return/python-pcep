@@ -198,3 +198,40 @@ D. `[0, 1, 4, 16]`
 I got this one incorrect too. Looking at the possible answers does at least give a hint, so the initial `my_list = [0,1,4,9,16]` as `range(5)` generates the numbers from 0 to 4 using *list comprehension* (defining a list's elements based on a formula rather than using individual literals). 
 
 Be careful with those nested list indicies for the `del` statement as it goes to the 2nd element of the list `4` and then uses that index to delete the 4th element `16`.
+
+### Question 11:What is the output of the following piece of code?
+
+```
+x = 1
+y = 2
+x, y, z = x, x, y
+z, y, z = x, y, z
+ 
+print(x, y, z)
+```
+
+A. `2 1 2`
+**B. `1 1 2`**
+C. `1 2 2`
+D. `1 2 1`
+
+This is another piece of devious PCEP code. The important thing to remember is the `1 1 2` and the key is to follow the variable as they are assigned from right to left.
+
+### Question 12: What will be the output of the following snippet?
+
+```
+a = 1
+b = 0
+a = a ^ b
+b = a ^ b
+a = a ^ b
+ 
+print(a, b)
+```
+
+**A. `0 1`**
+B. `1 1`
+C. `0 0`
+D. `1 0`
+
+The answer is `0 1` but I didn't get that correct. I first mistook the caret `^` which means bitwise XOR for bitwise AND whch uses the ampersand `&`. Then I didn't consider the two bits which comprise the variables `a = 01, b = 00`
