@@ -292,8 +292,8 @@ Python has three built-in forms of division:
 Modulo can be manually calculated with these four steps. For example, let's try `2 % 5`:
 
 1. **Divide the dividend** (the first number, two `2`) and divisor (the second number, five `5`) normally `2 // 5`. All decimal quotients (results) are rounded to the nearest integer – zero `0` in this case.
-2. **Multiply the quotient** (zero `0`) by the divisor (five `5`), `0 * 5 ` (which is zero `0`)
-3. **Subtract the result** from the original dividend, `2 - 0` (which is two `2`)
+2. **Multiply the quotient** (zero `0`) by the divisor (five `5`), `0 * 5 ` (which is zero `0`).
+3. **Subtract the result** from the original dividend, `2 - 0` (which is two `2`).
 4. The **remainder** is two `2` in this example.
 
 Try a few practice problems on paper to get the hang of it. You can also refer to and test this sample function I made:

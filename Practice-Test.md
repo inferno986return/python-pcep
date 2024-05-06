@@ -234,4 +234,144 @@ B. `1 1`
 C. `0 0`
 D. `1 0`
 
-The answer is `0 1` but I didn't get that correct. I first mistook the caret `^` which means bitwise XOR for bitwise AND whch uses the ampersand `&`. Then I didn't consider the two bits which comprise the variables `a = 01, b = 00`, then `a = 01 ^ 00` sets `a = 1`, same for `b = 01 ^ 00` sets `b = 1` therefore `a = 01 ^ 01` sets `a` back to zero (0) as they have identical inputs. 
+The answer is `0 1` but I didn't get that correct. I first mistook the caret `^` which means bitwise XOR for bitwise AND whch uses the ampersand `&`. Then I didn't consider the two bits which comprise the variables `a = 01, b = 00`, then `a = 01 ^ 00` sets `a = 1`, same for `b = 01 ^ 00` sets `b = 1` therefore `a = 01 ^ 01` sets `a` back to zero (0) as they have identical inputs.
+
+### Question 13: What is the output of the following snippet?
+
+```
+def fun(x):
+    if x % 2 == 0:
+        return 1
+    else:
+        return 2
+ 
+ 
+print(fun(fun(2)))
+```
+
+A. `1`
+B. the code will cause a runtime error
+C. `2None`
+**D. `2`**
+
+The output is `2`, so I got this one correct! This is a simple recurvise function.
+
+### Question 14: Take a look at the snippet and choose the true statement.
+
+```
+nums = [1, 2, 3]
+vals = nums
+del vals[:]
+```
+
+**A. `nums` and `vals` have the same length**
+B. `vals` is longer than `nums`
+C. `nums` is longer than `vals`
+D. the snippet will cause a runtime error
+
+### Question 15: What is the output of the following piece of code if the user enters two lines containing 3 and 2 respectively?
+
+```
+x = int(input()) # 3
+y = int(input()) # 2
+x = x % y
+x = x % y
+y = y % x
+print(y)
+```
+
+**A. 0**
+B. 2
+C. 1
+D. 3
+
+I thought it was `1` or `2`, but the answer is zero `0`. This is because the `y` assigment is `2 % 1 = 0`
+
+### Question 16: What is the output of the following piece of code if the user enters two lines containing 3 and 6 respectively?
+
+```
+y = input() # "3"
+x = input() # "6"
+print(x + y)
+```
+
+**A. `63`**
+B. `36`
+C. `3`
+D. `6`
+
+Yikes I got this one incorrect too as I didn't pay attention to the order of `x` and `y`.
+
+### Question 17: What is the output of the following piece of code?
+
+```
+print("a", "b", "c", sep="sep")
+```
+
+A. `a b c`
+**B. `asepbsepc`**
+C. `abc`
+D. `asepbsepcsep`
+
+Well I got this one correct as `sep` goes in between the outputs.
+
+### Question 18: What is the output of the following piece of code?
+
+```
+x = 1 // 5 + 1 / 5
+print(x)
+```
+
+A. `0`
+**B. `0.2`**
+C. `0.4`
+D. `0.5`
+
+I got this one correct. Nice and simple, remember *PEMDAS* so `1 // 5 = 0`, `1 / 5 = 0.2` and `0 + 0.2 = 0.2`.
+
+### Question 19: Assuming that my_tuple is a correctly created tuple, the fact that tuples are immutable means that the following instruction:
+
+```
+my_tuple[1] = my_tuple[1] + my_tuple[0]
+```
+
+A. is fully correct
+**B. is illegal**
+C. may be illegal if the tuple contains strings
+D. can be executed if and only if the tuple contains at least two elements
+
+Tuples are immutable adn therefore modifying it directly would lead to an error. Alternatively, you can create a new tuple and modify that.
+
+### Question 20: What is the output of the following piece of code if the user enters two lines containing 2 and 4 respectively?
+
+```
+x = float(input()) # 2.0
+y = float(input()) # 4.0
+print(y ** (1 / x))
+```
+
+A. `4.2`
+B. `1.0`
+**C. `2.0`**
+D. `0.0`
+
+Nice and easy. `4.0` to the power of `0.5` is where `2.0`
+
+### Question 21: What is the output of the following snippet?
+
+```
+dct = {'one': 'two', 'three': 'one', 'two': 'three'}
+v = dct['three']
+ 
+for k in range(len(dct)):
+    v = dct[v]
+ 
+print(v)
+```
+
+A. `two`
+B. `('one', 'two', 'three')`
+**C. `one`**
+D. `three`
+
+Need to figure out why this is `one`.
