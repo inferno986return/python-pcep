@@ -374,4 +374,124 @@ B. `('one', 'two', 'three')`
 **C. `one`**
 D. `three`
 
-Need to figure out why this is `one`.
+Need to figure out why this is `one` and how the for loop iterates through a dictionary.
+
+### Question 22: How many elements does the lst list contain?
+
+```
+lst = [i for i in range(-1, -2)]
+```
+
+A. `three`
+B. `two`
+**C. `zero`**
+D. `one`
+
+This generates an empty list `lst = []`. Why?
+
+### Question 23: Which of the following lines correctly invoke the function defined below? (Select two answers)
+
+```
+def fun(a, b, c=0):
+    # Body of the function.
+```
+
+A. `fun(b=1)`
+B.`fun()`
+**C.`fun(0, 1, 2)`**
+D. `fun(b=0, a=0)`
+
+### Question 24: What is the output of the following snippet?
+
+```
+def fun(x, y):
+    if x == y:
+        return x
+    else:
+        return fun(x, y-1)
+ 
+ 
+print(fun(0, 3))
+``` 
+
+A. the snippet will cause a runtime error
+B. `2`
+**C. `0`**
+D. `1`
+
+The recursive function `fun(0,3)` will keep running each time until `y` decrements down to zero `0` and is equal to `x` which is also zero `0`. Therefore zero `0` is returned and printed.
+
+### Question 25: How many stars (*) will the following snippet send to the console?
+
+```
+i = 0
+while i < i + 2 :
+    i += 1
+    print("*")
+else:
+    print("*")
+```
+
+A. zero
+B. one
+**C. the snippet will enter an infinite loop, printing one star per line**
+D. two
+
+Another deceptive question, but paying attention to the while loop condition shows this is an infinite loop with no exit condition so it can print an infinite number of stars with one per line.
+
+### Question 26: What is the output of the following snippet?
+
+```
+tup = (1, 2, 4, 8)
+tup = tup[-2:-1]
+tup = tup[-1]
+print(tup)
+```
+
+**A. 4**
+B. 44
+C. (4,)
+D. (4)
+
+I found this tricky, though the first slice `tup[-2:-1]` starts at `4` and ends in `8`. The start element is left over as the rest are sliced out making the single-element tuple `tup = (4,)` and then `tup[-1]` removes the tuple entirely leaving an integer, this also works for lists.
+
+* Start Index: “Start slicing from here, and include this element.”
+* End Index: “Stop slicing before this element.”
+
+### Question Question 27: What is the output of the following snippet?
+
+```
+dd = {"1": "0", "0": "1"}
+for x in dd.vals():
+    print(x, end="")
+```
+
+A. 1 0
+**B. the code is erroneous (the dict object has no vals() method)**
+C. 0 1
+D. 0 0
+
+More devious code from PCEP. There is no `dict.vals()` method and this will output an attribute error, however, there is a `dict.values()` method which will output `01` with this code.
+
+```
+line 2, in <module>
+    for x in dd.vals():
+             ^^^^^^^
+AttributeError: 'dict' object has no attribute 'vals'. Did you mean: 'values'?
+```
+
+### Question 28: What is the output of the following snippet?
+
+```
+dct = {}
+dct['1'] = (1, 2)
+dct['2'] = (2, 1)
+ 
+for x in dct.keys():
+    print(dct[x][1], end="")
+```
+
+A. (1,2)
+B. 12
+C. 21
+D. (2,1)
