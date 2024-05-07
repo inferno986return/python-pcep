@@ -493,5 +493,149 @@ for x in dct.keys():
 
 A. (1,2)
 B. 12
-C. 21
+**C. 21**
 D. (2,1)
+
+Another tricky question, the key takeway is that the dict holds 2 tuples `(1,2)` and `(2,1)`, so 2 indices `[x][1]` are required to specify and print the second value of each tuple. The `end` ensures the two outputs concatenate together.
+
+### Question 29: What is the output of the following snippet?
+
+```
+def fun(inp=2, out=3):
+    return inp * out
+ 
+ 
+print(fun(out=2))
+```
+
+A. `2`
+B. `6`
+C. the snippet is erroneous and will cause SyntaxError
+**D. `4`**
+
+I didn't get this one correct either, but it makes sense. The function `fun(inp=2, out=3)` has parameters, so it will fallback to them if they are undefined when the function is called. Therefore the output is `4`, when the function run without arguments as `fun()` the output is `6`.
+
+### Question 30: How many hashes (#) will the following snippet send to the console?
+
+```
+lst = [[x for x in range(3)] for y in range(3)]
+ 
+for r in range(3):
+    for c in range(3):
+        if lst[r][c] % 2 != 0:
+            print("#")
+```
+
+A. six
+B. zero
+C. nine
+**D. three**
+
+I guessed correctly, I assume that this was the list `lst = [[0,1,2], [0,1,2], [0,1,2]]` and the nested for loops merely check against those 6 values to see which are odd (not divisible by 2), so the answer is `1,1,1`.
+
+### Question 31: What is the output of the following code if the user enters a 0?
+
+```
+try:
+    value = input("Enter a value: ")
+    print(int(value)/len(value))
+except ValueError:
+    print("Bad input...")
+except ZeroDivisionError:
+    print("Very bad input...")
+except TypeError:
+    print("Very very bad input...")
+except:
+    print("Booo!")
+```
+
+A. 1.0
+**B. 0.0**
+C. Very very bad input...
+D. Bad input...
+E. Very bad input...
+F. Booo!
+
+Yeah, I do not get that `0.0` output at all. `input()` captures a user input and stores it as a string regardless of the user's input, then `len(value)` which is `1` in this case, so `0/1 = 0.0`. If an `int(input())` was used it would throw an error.
+
+### Question 32: What is the expected behavior of the following program?
+
+```
+try:
+    print(5/0)
+    break
+except:
+    print("Sorry, something went wrong...")
+except (ValueError, ZeroDivisionError):
+    print("Too bad...")
+```
+
+A. The program will cause a `ZeroDivisionError` exception and output the following message: `Too bad...`
+B. The program will cause a `ValueError` exception and output a default error message.
+C. The program will cause a `ZeroDivisionError` exception and output a default error message.
+D. The program will cause a `SyntaxError` exception.
+E. The program will cause a `ValueError` exception and output the following message: `Too bad...`
+**F. The program will raise an exception handled by the first `except` block.**
+
+Another confusing PCEP question! The source code here is really bad and throws up 2 errors, the first of which is that `break` is not allowed in an `except` block, but also the exception hierarchy doesn't allow specific errors after a catch-all `except`.
+
+### Question 33: What is the expected behavior of the following program?
+
+```
+foo = (1, 2, 3)
+foo.index(0)
+```
+
+A. The program will cause a *ValueError* exception.
+B. The program will cause an *AttributeError* exception.
+C. The program will output `1` to the screen.
+D. The program will cause a *TypeError* exception.
+E. The program will cause a *SyntaxError* exception.
+
+### Question 34: Which of the following snippets shows the correct way of handling multiple exceptions in a single except clause?
+
+```
+# A:
+except (TypeError, ValueError, ZeroDivisionError):
+    # Some code.
+ 
+# B:
+except TypeError, ValueError, ZeroDivisionError:
+    # Some code.
+ 
+# C:
+except: (TypeError, ValueError, ZeroDivisionError)
+    # Some code.
+ 
+# D:
+except: TypeError, ValueError, ZeroDivisionError
+    # Some code.
+ 
+# E:
+except (TypeError, ValueError, ZeroDivisionError)
+    # Some code.
+ 
+# F:
+except TypeError, ValueError, ZeroDivisionError
+    # Some code.
+```
+
+F only
+A and B
+A and F
+B and C
+D and E
+A only
+A, C, and D
+
+### Question 35: What will happen when you attempt to run the following code?
+
+```
+print(Hello, World!)
+```
+
+A. The code will print `Hello, World!` to the console.
+B. The code will raise the *SyntaxError* exception.
+C. The code will raise the *TypeError* exception.
+D. The code will raise the *ValueError* exception.
+E. The code will raise the *AttributeError* exception.

@@ -1,8 +1,13 @@
 # Python Essentials 1 – Module 3: Data Collections (Tuples, Dictionaries, Lists, and Strings)
 
-## Section 2
+## Section 3.2
 
-### LAB: Collatz conjecture
+### `break` and `continue` statements
+The `break` and `continue` statements are designed to exit loops and skip loop interations respectively.
+
+`break` will prematurely exit the loop entirely. In a nested loop, the parent loop will still keep running unless that also has a `break` or meets its condition.
+
+### LAB 22: Collatz conjecture
 Collatz conjecture is an unsolved yet simplistic mathematical problem and the second lab exercise for while loops. For the sake of this Python lab, we assume that every c0 is a positive integer (that isn't zero) and with enough steps it can be made equal to 1.
 
 The steps for Collatz conjecture are as follows, as per Wikipedia:
@@ -391,3 +396,4 @@ print(my_list)  # Output: [1, 2, 4, 6, 9]
 print("The list with unique elements only:")
 print(my_list)
 ```
+
