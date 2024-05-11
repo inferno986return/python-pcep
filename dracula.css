@@ -1,0 +1,69 @@
+/* dracula.css - Dracula Theme CSS for e-books
+
+MIT Licensed - Copyright (c) 2023 Dracula Theme
+
+A CSS file for applying the beautiful Dracula Theme source code syntax highlighting EPUB 2.0.1 and EPUB 3 as part of the ebookbuild project by Hal Motley (Inferno986return). 
+
+This file is designed to be used alongside zstylesheet.css and are merely colour definitions. Pair with a monospaced font such as Twilio Sans Mono, Hack, Roboto Mono or Ubuntu Mono.
+
+“Welcome to my house! Enter freely. Go safely, and leave something of the happiness you bring.”
+― Count Dracula, Bram Stoker
+
+Background - #282a36
+Current Line - #44475a
+Selection - #44475a`
+Foreground (variables) - #f8f8f2  
+Comment - #6272a4
+Cyan (built-in functions) - #8be9fd
+Green (function names) - #50fa7b   
+Orange (function parameters in *italic*) - #ffb86c
+Pink (keywords) - #ff79c6
+Purple - #bd93f9
+Red (errors) - #ff5555
+Yellow (strings) - #f1fa8c
+
+*/
+
+.background {
+background-color: #282a36;
+}
+
+.foreground, .comment {
+    color: #6272a4;
+}
+
+.current-line, .selection {
+    color: #44475a;
+}
+
+.pink, .keyword {
+    color: #ff79c6;
+}
+
+.cyan, .built-in {
+    color: #8be9fd;
+}
+
+.green, .function {
+    color: #50fa7b;
+}
+
+.orange, .parameter {
+    color: #ffb86c;
+}
+
+.red, .error {
+    color: #ff5555;
+}
+
+.white, .variable {
+    color: #f8f8f2;
+}
+
+.purple, .integer {
+    color: #bd93f9;
+}
+
+.yellow, .string {
+    color: #f1fa8c;
+}
