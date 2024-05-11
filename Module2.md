@@ -251,6 +251,18 @@ However, we can force left-side binding by using brackets:
 
 You may have realised this is the same as 2<sup>8</sup> (2^8 = 2×2×2×2×2×2×2×2)
 
+I attempted Robert Karamagi's practice test and was intrigued that for all integers (including zero) where zero is the exponent, the output is always `1`. For example: 0<sup>0</sup> = 1, 1<sup>0</sup> = 1, 2<sup>0</sup> = 1, etc.
+
+I wrote a simple program to demonstrate this and I recommend running it:
+
+```
+i = 0
+
+for i in range(11):
+    print(i ** 0)
+    i += 1
+```
+
 Lastly, we have literal exponentiation using the uppercase letter `E` (or lowercase letter `e`) for expressing very large (or very small) numbers such as 200 million (2×10<sup>8</sup> = 200,000,000), which would be `2E8` with this notation.
 
 `print(2E8)`
