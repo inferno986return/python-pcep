@@ -277,6 +277,13 @@ A more practical example would be Avrogadro's constant which is used in chemistr
 
 Much like division `/`, using an exponential with `E` creates a float value. Though as usual this can be forced into an integer by using `int()`.
 
+Python prefers printing in the `e` exponentiation notation for very large and very small numbers such as
+
+```
+print(0.0000000000000000000000000000001)
+1e-31
+```
+
 ### Left-side and right-side binding
 
 The operators in Python are by default left-side bound with the only exception being exponentiation `**`. This means that calculations are performed from left-to-right:

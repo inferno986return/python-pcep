@@ -27,6 +27,15 @@ For example, both `"Hello"` and `"World"` are positional arguments for this `pri
 
 `print("Hello", "World")`
 
+Placing positional arguments in an incorrect order can lead to a `SyntaxError`.
+
+```
+ File "main.py", line 1
+    print(sep="&", "Hello", "World")
+                  ^
+SyntaxError: positional argument follows keyword argument
+```
+
 ## Function keywords
 `break`
 `continue`
