@@ -1,0 +1,1 @@
+write() #If you want to write a byte array's content to a stream, which method can you use?
