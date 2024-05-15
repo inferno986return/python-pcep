@@ -9,32 +9,17 @@ RustPython
 keyword
 
 ## Function arguments
-### arguments
-Arguments are the values themselves applied to a function call such as `def my_function(1,2)`, `print("Hello World")`
+### Arguments
+Arguments are the values passed to a function. For example, in `print("Hello World")`, `"Hello World"` is an argument.
 
-### keyword argument
-Keyword arguments are arguments applied with a keyword and an equals sign `=`. A good example is `print()` which as 4 keyword arguments, `sep=`, `end=`, `file=` and `flush=`
+### Keyword Arguments
+Keyword arguments are named arguments specified with a keyword and an equals sign `=`. For example, `print("Hello", end="!")` uses `end=` as a keyword argument.
 
-### parameters
-Parameters are placeholders in a function declaration which can be used to define def demonstrate the expected arguments and also . 
+### Parameters
+Parameters are placeholders in a function declaration. They define the expected arguments. For example, `def my_function(a, b)` uses `a` and `b` as parameters.
 
-For example, `def my_function(a,b)`
-
-### positional arguments
-Positional arguments are placed within the paratheses of a function that are seperated by a comma `,` and processed in the order they are written in. 
-
-For example, both `"Hello"` and `"World"` are positional arguments for this `print()` function call:
-
-`print("Hello", "World")`
-
-Placing positional arguments in an incorrect order can lead to a `SyntaxError`.
-
-```
- File "main.py", line 1
-    print(sep="&", "Hello", "World")
-                  ^
-SyntaxError: positional argument follows keyword argument
-```
+### Positional Arguments
+Positional arguments are specified without keywords and are interpreted based on their position. For example, in `print("Hello", "World")`, both `"Hello"` and `"World"` are positional arguments.
 
 ## Function keywords
 `break`
