@@ -306,9 +306,30 @@ See also: https://www.mathsisfun.com/numbers/division.html
 
 Python has three built-in forms of division:
 
-1. **Division** (`/`) is the standard division operator which will *always* output a float value. For example, `9 / 3` will output `3.0`.
-2. **Floor division** (`//`) creates an integer by rounding the output to the lowest number and then removing all the values beyond the decimal point. For example, running floor division on these outputs `3` each time: `3.1`, `3.5`, `3.9`
-3. **Modulo** (`%`) gives the remainder of a division as an integer. It can be useful for checking divisibility i.e. whether 9 is divisible by 3 or determining if a value is even (divisible by 2).
+#### Division (`/`)
+Division (`/`) is the standard division operator which will *always* output a float value. For example, `9 / 3` will output `3.0`.
+
+#### Floor division (`//`)
+Floor division (`//`) creates an integer by rounding the output to the lowest number and then removing all the values beyond the decimal point. For example, running floor division on these outputs `3` each time: `3.1`, `3.5`, `3.9`
+
+When using float values as the dividend or the divisor, it's possible to get a float quotient (a floatient, if you will):
+
+```
+print(6. // 4)
+```
+```
+1.0
+```
+
+For negative values, floor division will round down to the next integer:
+
+```
+print(-6 // 4)
+-2
+```
+
+#### Modulo (`%`)
+**Modulo** (`%`) gives the remainder of a division as an integer. It can be useful for checking divisibility i.e. whether 9 is divisible by 3 or determining if a value is even (divisible by 2).
 
 Modulo can be manually calculated with these four steps. For example, let's try `2 % 5`:
 
@@ -332,6 +353,9 @@ print("Remainder:", modulo(x, y))
 print("Should be:", x % y)
 ```
 
+For when using float values for the dividend or divisor, the remainder will also be a decimal.
+
+
 Alternatively, a quick and lazy way is to estimate the remainder for some modulo problems is just dividing the dividend and devisor in your head and use the nearest multiple. This only works for me where the *dividend is larger than the divisor*. So instead of `2 % 5`, I can do `11 % 4` and since 4×3=12, the remainder can be guessed as 3.
 
 **Exam tip:** For the Python PCEP exam, you will need to remember that division `/` always outputs a **float** value and both floor division `//` and modulo `%` always output an **integer** value.
@@ -340,7 +364,7 @@ If it's easier, you could refer to them as *float division* and *integer divisio
 
 **Beyond the PCEP:** Ceiling division is the opposite of floor division, but there's no built-in operator for it and instead there is a function avilable in the built-in `math` library, but this is outside the scope of the PCEP.
 
-And finally, **division by zero** is mathematically undefined. Therefore it will throw a `ZeroDivisionError` error if you try to use zero (`0`) as the divisor in calculation which will stop the program execution by default:
+And finally, **division by zero** is mathematically undefined. Therefore it will throw a `ZeroDivisionError` error if you try to use zero (`0`) as the divisor in a calculation which will stop the program execution by default:
 
 `3 / 0`
 
