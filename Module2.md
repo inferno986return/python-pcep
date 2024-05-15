@@ -40,6 +40,8 @@ print("Hello", "World")
 Hello World
 ```
 
+Let's introduce the concept of *positional arguments*. In this case, `"Hello"` and `"World"` are positional arguments which have been applied to the `print()` function. Their order is very important as that is the order the function processes.
+
 The comma will add a space between the variables and keep them on one line as the newline `\n` is at the end of the `print()` function, at least by default. Let's try outputting `"Hello"` and `"World"` over separate lines, but using only one `print()` function:
 
 ```

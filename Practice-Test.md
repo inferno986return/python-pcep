@@ -22,7 +22,7 @@ C. [1, 2, 1, 2]
 
 D. [1, 2, 2, 2]
 
-I ran this code snippet, but why is the answer A? I am convinced it was C.
+I ran this code snippet, but why is the answer A? I am convinced it was C. The loop uses the iterator `v` with the `list.insert()` method to add elements just before the final element of the list `2`.
 
 1. First Iteration (`v = 0`):
 * `my_list[v]` is `1`.
@@ -64,7 +64,7 @@ B. nums and vals are different lists
 C. vals is longer than nums
 **D. nums and vals are different names of the same list**
 
-Lists are unusual as when they are assigned to other variables like this they are merely referenced so `nums` and `vals` are the same list. This means that if `nums` changed in any way, `vals` would also be affected. Either a slice or method would need to be used to make nums a separate duplicate list.
+Lists are unusual as when they are assigned to other variables like this they are merely referenced, so `nums` and `vals` are the same list. This means that if `nums` changed in any way, `vals` would also be affected. Either a slice (`nums = vals[:]`) or method (`nums = vals.copy()`) would need to be used to make `nums` a separate duplicate list.
 
 ### Question 4: An operator able to check whether two values are not equal is coded as:
 
@@ -119,7 +119,7 @@ B. cannot be predicted
 **C. is equal to 0**
 D. is equal to 0.0
 
-This one is also very easy as it's a simple floor division operation so `1 // 2 = 0`. Floor division will *only output integers* or a DivideByZeroError in the case the divisor is zero `0`.
+This one is also very easy as it's a simple floor division operation so `1 // 2 = 0`. Floor division will *only output integers* or a `DivideByZeroError` in the case the divisor is zero `0`.
 
 ### Question 7: What is the output of the following snippet:
 
@@ -136,7 +136,7 @@ B. will output `2`
 C. will output `4`
 D. will output `None`
 
-The order of positional arguments does matter, so the Python 3 interpreter won't allow this `print()` function and subsequently generates a SyntaxError.
+The order of positional arguments does matter, so the Python 3 interpreter won't allow this `print()` function and subsequently generates a `SyntaxError`.
 
 ```
 line 5
@@ -174,7 +174,7 @@ This was a tricky one for me and I initially got this incorrect as `True`. Remem
 C. print
 D. In
 
-`for` and `in` are reserved keywords in Python 3, using them as variables will result in a `SyntaxError`. As for the other answers, Python 2 used to reserve `print` as a statement, though since becoming a built-in function this restriction was dropped. Also since Python 3 is case-sensititive `In` is technically allowed. I wouldn't recommend either though as it may add unneccessary complexity to your source code.
+`for` and `in` are reserved keywords in Python 3, using them as variables will result in a `SyntaxError`. As for the other answers, Python 2 used to reserve `print` as a statement, though since becoming a built-in function this restriction was dropped. Also since Python 3 is case-sensititive `In` is technically allowed. I wouldn't recommend using either `print` or `In` as variable names though as it may add unneccessary complexity to your source code.
 
 ### Question 10: What is the output of the following snippet?
 
@@ -197,7 +197,7 @@ D. `[0, 1, 4, 16]`
 
 I got this one incorrect too. Looking at the possible answers does at least give a hint, so the initial `my_list = [0,1,4,9,16]` as `range(5)` generates the numbers from 0 to 4 using *list comprehension* (defining a list's elements based on a formula rather than using individual literals). 
 
-Be careful with those nested list indicies for the `del` statement as it goes to the 2nd element of the list `4` and then uses that index to delete the 4th element `16`.
+Be careful with those nested list indicies for the `del` statement as it goes to the 2nd element of the list `4` and then uses that index to delete the 4th element `16`. Work your way outwards from a nested index.
 
 ### Question 11: What is the output of the following piece of code?
 
@@ -215,7 +215,7 @@ A. `2 1 2`
 C. `1 2 2`
 D. `1 2 1`
 
-This is another piece of devious PCEP code. The important thing to remember is the `1 1 2` and the key is to follow the variable as they are assigned from right to left.
+This is another piece of devious PCEP code. The important thing to remember is the `1 1 2` and the key is to follow the variable values as they are assigned from right to left.
 
 ### Question 12: What will be the output of the following snippet?
 
@@ -236,6 +236,18 @@ D. `1 0`
 
 The answer is `0 1` but I didn't get that correct. I first mistook the caret `^` which means bitwise XOR for bitwise AND whch uses the ampersand `&`. Then I didn't consider the two bits which comprise the variables `a = 01, b = 00`, then `a = 01 ^ 00` sets `a = 1`, same for `b = 01 ^ 00` sets `b = 1` therefore `a = 01 ^ 01` sets `a` back to zero (0) as they have identical inputs.
 
+To make it even simpler as this is just comparing one bit:
+
+```
+a = 0
+b = 1
+```
+
+1. `a = a ^ b`, therefore `1 = 1 ^ 0`
+2. `b = a ^ b`, therefore `1 = 1 ^ 0`
+3. `a = a ^ b`, therefore `0 = 1 ^ 1`
+4. `print(a,b)`, outputs: `0 1`   
+
 ### Question 13: What is the output of the following snippet?
 
 ```
@@ -254,7 +266,7 @@ B. the code will cause a runtime error
 C. `2None`
 **D. `2`**
 
-The output is `2`, so I got this one correct! This is a simple recurvise function.
+The output is `2`, so I got this one correct! This is a simple recursive function.
 
 ### Question 14: Take a look at the snippet and choose the true statement.
 
@@ -268,6 +280,8 @@ del vals[:]
 B. `vals` is longer than `nums`
 C. `nums` is longer than `vals`
 D. the snippet will cause a runtime error
+
+As mentioned previously in question 3, `vals` is the same list as `nums`, in the C language there is a concept of pointers which point to (reference) the area of memory where a variable is contained.
 
 ### Question 15: What is the output of the following piece of code if the user enters two lines containing 3 and 2 respectively?
 
@@ -287,6 +301,8 @@ D. 3
 
 I thought it was `1` or `2`, but the answer is zero `0`. This is because the `y` assigment is `2 % 1 = 0`
 
+Modulo reveals the remainder of a division rather than the quotient. For all natural numbers (integers above zero) `n`, `n mod 1 = 0` in every case because every natural number is divisible by `1` (some are only divisible by one and themselves hence they are prime numbers).
+
 ### Question 16: What is the output of the following piece of code if the user enters two lines containing 3 and 6 respectively?
 
 ```
@@ -301,6 +317,8 @@ C. `3`
 D. `6`
 
 Yikes I got this one incorrect too as I didn't pay attention to the order of `x` and `y`.
+
+Read over the code to ensure you haven't missed anything.
 
 ### Question 17: What is the output of the following piece of code?
 
@@ -355,7 +373,7 @@ B. `1.0`
 **C. `2.0`**
 D. `0.0`
 
-Nice and easy. `4.0` to the power of `0.5` is where `2.0`
+Nice and easy. `4.0` to the power of `0.5` is `2.0`. For square numbers `s` exponentition to `0.5` is the same as running a square root `math.sqrt()` operation on them, hence this formula: `sqrt(s) = s^0.5`. Does this apply to all square numbers?
 
 ### Question 21: What is the output of the following snippet?
 
@@ -374,7 +392,7 @@ B. `('one', 'two', 'three')`
 **C. `one`**
 D. `three`
 
-Need to figure out why this is `one` and how the for loop iterates through a dictionary.
+This is `one` because `v` loops through the whole dictionary and goes back to the starting point due to using the dict's length as the range for the `for` loop.
 
 ### Question 22: How many elements does the lst list contain?
 
@@ -387,7 +405,9 @@ B. `two`
 **C. `zero`**
 D. `one`
 
-This generates an empty list `lst = []`. Why?
+This generates an empty list `lst = []` as the `range()` start is `-1` and the stop `-2`, as there are no integers between those values nothing is added to the list. But it's still a list and therefore needs the square brackets `[]` to be defined as one.
+
+Remember for `range()` since there is no integer that satisfies the condition of being greater than -1 and less than -2 when counting by ones, the range is empty, and thus no -1 is included in the list.
 
 ### Question 23: Which of the following lines correctly invoke the function defined below? (Select two answers)
 
