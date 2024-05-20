@@ -355,8 +355,9 @@ print("Should be:", x % y)
 
 For when using float values for the dividend or divisor, the remainder will also be a decimal.
 
-
 Alternatively, a quick and lazy way is to estimate the remainder for some modulo problems is just dividing the dividend and devisor in your head and use the nearest multiple. This only works for me where the *dividend is larger than the divisor*. So instead of `2 % 5`, I can do `11 % 4` and since 4×3=12, the remainder can be guessed as 3.
+
+Or for `11 % 4`, find the nearest multiple which is 1 less than the number and then count the difference? So `4 * 2 = 8` and `11 - 8 = 3` 
 
 **Exam tip:** For the Python PCEP exam, you will need to remember that division `/` always outputs a **float** value and both floor division `//` and modulo `%` always output an **integer** value.
 
