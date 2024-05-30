@@ -576,7 +576,9 @@ D. Bad input...
 E. Very bad input...
 F. Booo!
 
-Yeah, I do not get that `0.0` output at all. `input()` captures a user input and stores it as a string regardless of the user's input, then `len(value)` which is `1` in this case, so `0/1 = 0.0`. If an `int(input())` was used it would throw an error.
+Yeah, I do not get that `0.0` output at all. 
+
+`input()` captures a user input and stores it as a string regardless of the user's input, then `len(value)` which is `1` in this case, so `0/1 = 0.0`. If an `int(input())` was used it would throw an error.
 
 ### Question 32: What is the expected behavior of the following program?
 
@@ -597,7 +599,7 @@ D. The program will cause a `SyntaxError` exception.
 E. The program will cause a `ValueError` exception and output the following message: `Too bad...`
 **F. The program will raise an exception handled by the first `except` block.**
 
-Another confusing PCEP question! The source code here is really bad and throws up 2 errors, the first of which is that `break` is not allowed in an `except` block, but also the exception hierarchy doesn't allow specific errors after a catch-all `except`.
+Another confusing PCEP question! The source code here is really bad and throws up 2 errors, the first of which is that `break` is not allowed in an `except` block (but will likely be just ignored by the Python interpreter), but also the exception hierarchy doesn't allow specific errors after a catch-all `except`.
 
 ### Question 33: What is the expected behavior of the following program?
 
@@ -606,11 +608,13 @@ foo = (1, 2, 3)
 foo.index(0)
 ```
 
-A. The program will cause a *ValueError* exception.
-B. The program will cause an *AttributeError* exception.
+**A. The program will cause a `ValueError` exception.**
+B. The program will cause an `AttributeError` exception.
 C. The program will output `1` to the screen.
-D. The program will cause a *TypeError* exception.
-E. The program will cause a *SyntaxError* exception.
+D. The program will cause a `TypeError` exception.
+E. The program will cause a `SyntaxError` exception.
+
+Sets are unordered and have no duplicates. The `foo.index()` method is for tuples, not sets. Therefore a `ValueError` occurred. However, sets can be indexed like lists so `foo[0]` does work and will output `1`.
 
 ### Question 34: Which of the following snippets shows the correct way of handling multiple exceptions in a single except clause?
 
@@ -640,13 +644,21 @@ except TypeError, ValueError, ZeroDivisionError
     # Some code.
 ```
 
-F only
-A and B
-A and F
+A. F only
+
+B. A and B
+
+C. A and F
+
 B and C
+
 D and E
-A only
+
+**A only**
+
 A, C, and D
+
+Another tricky one. After a `try` statement, `except` can be used on its own as as a catch-all for either all errors or remaining errors, but you can also specify behaviour by the exception. For a single exception, it can be defined like any other statement `except DivideByZeroError:`, for multiple exceptions use paratheses and then a colon `except (TypeError, ValueError, ZeroDivisionError):`.
 
 ### Question 35: What will happen when you attempt to run the following code?
 
@@ -655,7 +667,16 @@ print(Hello, World!)
 ```
 
 A. The code will print `Hello, World!` to the console.
-B. The code will raise the *SyntaxError* exception.
+**B. The code will raise the *SyntaxError* exception.**
 C. The code will raise the *TypeError* exception.
 D. The code will raise the *ValueError* exception.
 E. The code will raise the *AttributeError* exception.
+
+Nice and easy, this is a `SyntaxError` and attempting to run this code gives this error:
+
+```
+  File "<stdin>", line 1
+    print(Hello, World!)
+                      ^
+SyntaxError: invalid syntax
+```

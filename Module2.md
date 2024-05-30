@@ -329,7 +329,12 @@ print(-6 // 4)
 ```
 
 #### Modulo (`%`)
-**Modulo** (`%`) gives the remainder of a division as an integer. It can be useful for checking divisibility i.e. whether 9 is divisible by 3 or determining if a value is even (divisible by 2).
+**Modulo** (`%`) gives the remainder of a division as an integer. It can be useful for checking divisibility i.e. whether 9 is divisible by 3 or determining if a value is odd (divisible by 2 with a remainder of 1) or even (divisible by 2 with no remainder).
+
+```
+for i in range(11):
+    print(f"{i} mod 2 = {i % 2}")
+```
 
 Modulo can be manually calculated with these four steps. For example, let's try `2 % 5`:
 
