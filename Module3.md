@@ -5,7 +5,31 @@
 ### `break` and `continue` statements
 The `break` and `continue` statements are designed to exit loops and skip loop interations respectively.
 
-`break` will prematurely exit the loop entirely. In a nested loop, the parent loop will still keep running unless that also has a `break` or meets its condition.
+#### `break` statement
+`break` will abruptly and prematurely exit the loop (like Ctrl+C does in the terminal). In a nested loop, the parent loop will still keep running unless that also has a `break` or meets its condition. 
+
+Note that `break` will also ignore any `else` statements used by the loop which usually run when the loop has met its condition.
+
+For nested loops, `break` will exit the inner loop that it is used in.
+
+#### `continue` statement
+`continue` skips an interation of a loop.
+
+In this example, odd numbers are printed to the console:
+
+```
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)
+```
+```
+1
+3
+5
+7
+9
+```
 
 ### LAB 22: Collatz conjecture
 Collatz conjecture is an unsolved yet simplistic mathematical problem and the second lab exercise for while loops. For the sake of this Python lab, we assume that every c0 is a positive integer (that isn't zero) and with enough steps it can be made equal to 1.
